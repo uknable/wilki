@@ -1,0 +1,204 @@
+fileFormatVersion: 2
+guid: 40a44450e3c18304f8a871aa3aac455d
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: bench
+    100002: bench-bracket
+    100004: bench-brackettop
+    100006: bench-top
+    100008: bench.001
+    100010: bin-body
+    100012: bin-lid
+    100014: bin-wheels
+    100016: Camera
+    100018: coffeemug
+    100020: coffeetin
+    100022: first-aid-kit
+    100024: hot-water-dispenser
+    100026: hot-water-dispenser-nozzle
+    100028: hot-water-dispenser-tap
+    100030: hotwater-dispenser-nozzleb.001
+    100032: //RootNode
+    100034: Light
+    100036: microwave-body
+    100038: microwave-door
+    100040: shelf
+    100042: soap-dispenser
+    100044: water-dispenser
+    100046: water-dispenser-nozzle
+    400000: bench
+    400002: bench-bracket
+    400004: bench-brackettop
+    400006: bench-top
+    400008: bench.001
+    400010: bin-body
+    400012: bin-lid
+    400014: bin-wheels
+    400016: Camera
+    400018: coffeemug
+    400020: coffeetin
+    400022: first-aid-kit
+    400024: hot-water-dispenser
+    400026: hot-water-dispenser-nozzle
+    400028: hot-water-dispenser-tap
+    400030: hotwater-dispenser-nozzleb.001
+    400032: //RootNode
+    400034: Light
+    400036: microwave-body
+    400038: microwave-door
+    400040: shelf
+    400042: soap-dispenser
+    400044: water-dispenser
+    400046: water-dispenser-nozzle
+    2000000: Camera
+    2100000: No Name
+    2100002: metal
+    2100004: Material.001
+    2100006: Material.002
+    2300000: bench
+    2300002: bench-bracket
+    2300004: bench-brackettop
+    2300006: bench-top
+    2300008: bench.001
+    2300010: bin-body
+    2300012: bin-lid
+    2300014: bin-wheels
+    2300016: coffeemug
+    2300018: coffeetin
+    2300020: first-aid-kit
+    2300022: hot-water-dispenser
+    2300024: hot-water-dispenser-nozzle
+    2300026: hot-water-dispenser-tap
+    2300028: hotwater-dispenser-nozzleb.001
+    2300030: microwave-body
+    2300032: microwave-door
+    2300034: shelf
+    2300036: soap-dispenser
+    2300038: water-dispenser
+    2300040: water-dispenser-nozzle
+    3300000: bench
+    3300002: bench-bracket
+    3300004: bench-brackettop
+    3300006: bench-top
+    3300008: bench.001
+    3300010: bin-body
+    3300012: bin-lid
+    3300014: bin-wheels
+    3300016: coffeemug
+    3300018: coffeetin
+    3300020: first-aid-kit
+    3300022: hot-water-dispenser
+    3300024: hot-water-dispenser-nozzle
+    3300026: hot-water-dispenser-tap
+    3300028: hotwater-dispenser-nozzleb.001
+    3300030: microwave-body
+    3300032: microwave-door
+    3300034: shelf
+    3300036: soap-dispenser
+    3300038: water-dispenser
+    3300040: water-dispenser-nozzle
+    4300000: bench
+    4300002: bench-bracket
+    4300004: bench-brackettop
+    4300006: bench-top
+    4300008: bin-body
+    4300010: bin-lid
+    4300012: bin-wheels
+    4300014: coffeemug
+    4300016: coffeetin
+    4300018: microwave-body
+    4300020: microwave-door
+    4300022: bench.001
+    4300024: first-aid-kit
+    4300026: hot-water-dispenser
+    4300028: hot-water-dispenser-nozzle
+    4300030: hot-water-dispenser-tap
+    4300032: hotwater-dispenser-nozzleb.001
+    4300034: shelf
+    4300036: soap-dispenser
+    4300038: water-dispenser
+    4300040: water-dispenser-nozzle
+    10800000: Light
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
