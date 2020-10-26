@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.5
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.26572722, g: 0.27143615, b: 0.25494504, a: 0.5}
+  m_IndirectSpecularColor: {r: 0.32075965, g: 0.35809293, b: 0.41682985, a: 0.5}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -246,6 +246,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 43b5c375e0df14a55bc2c596a72a99b6, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &62980504 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114387856575736012, guid: cdd5289a4cebe4902a132d5970cc3910,
+    type: 2}
+  m_PrefabInternal: {fileID: 477892471}
+  m_Script: {fileID: 11500000, guid: ea21d8f36ec47483884d665cde22bf81, type: 3}
 --- !u!1001 &66952006
 Prefab:
   m_ObjectHideFlags: 0
@@ -486,7 +492,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &170076734
 Light:
   m_ObjectHideFlags: 0
@@ -1248,6 +1254,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 108071909010206632, guid: cdd5289a4cebe4902a132d5970cc3910,
+        type: 2}
+      propertyPath: m_Intensity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 20144124608453642, guid: cdd5289a4cebe4902a132d5970cc3910,
+        type: 2}
+      propertyPath: near clip plane
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114387856575736012, guid: cdd5289a4cebe4902a132d5970cc3910,
+        type: 2}
+      propertyPath: moveSpeed
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cdd5289a4cebe4902a132d5970cc3910, type: 2}
   m_IsPrefabParent: 0
@@ -1741,6 +1762,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 108.475006
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 20ef872e558c7430893b86e49f6ed71d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 20ef872e558c7430893b86e49f6ed71d, type: 3}
   m_IsPrefabParent: 0
@@ -2011,7 +2036,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &862918659
 Transform:
   m_ObjectHideFlags: 0
@@ -3445,3 +3470,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0014637569, y: 0.0025545668, z: 0.006547723}
   m_Center: {x: 0.00006051537, y: -0.0000019395372, z: -0.0005185963}
+--- !u!1 &2132663409 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1809599651325268, guid: cdd5289a4cebe4902a132d5970cc3910,
+    type: 2}
+  m_PrefabInternal: {fileID: 477892471}
+--- !u!114 &2132663411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2132663409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458edafecb1b644ca855c69b84737bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkingBobbingSpeed: 7.5
+  bobbingAmount: 0.025
+  playerMovement: {fileID: 62980504}
