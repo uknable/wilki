@@ -4,23 +4,20 @@ using UnityEngine;
 
 public class DoorOpen : MonoBehaviour {
 
-	public Transform customPivot;
-
 	public float openSpeed;
 
 	Animator animator;
-	bool playerNear;
+	bool isOpen = false;
 
-	void Update()
+	void Start()
 	{
-		
-
-		// transform.RotateAround(customPivot.position, Vector3.up, openSpeed * Time.deltaTime);
+		animator = GetComponent<Animator>();
 	}
 
-	void OnTriggerEnter(Collider other) {
-		if (other.tag == "Player") {
-			Debug.Log("Hello Player");
+	void OnTriggerStay(Collider other) {
+		if (other.tag == "Player" && Input.GetMouseButtonDown(0)) {
+			isOpen = !isOpen;
+			animator.SetBool("DoorOpen", isOpen);
 		}
 	}
 }
