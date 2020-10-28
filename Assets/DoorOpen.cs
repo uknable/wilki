@@ -17,4 +17,10 @@ public class DoorOpen : MonoBehaviour {
 
 		// transform.RotateAround(customPivot.position, Vector3.up, openSpeed * Time.deltaTime);
 	}
+
+	void OnTriggerEnter(Collider other) {
+		if (other.tag == "Player") {
+			Debug.Log("Hello Player");
+		}
+	}
 }
