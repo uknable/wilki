@@ -1,23 +1,15 @@
 fileFormatVersion: 2
-guid: 3f89bb6498d814406bce8825c389bd91
+guid: 43884715180661e47b7a54a06a25e7a5
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Door
-    100002: //RootNode
-    100004: Handle.001
-    400000: Door
-    400002: //RootNode
-    400004: Handle.001
-    2100000: Door_inside
-    2100002: Door_outside
-    2100004: Handle_inside
-    2300000: Door
-    2300002: Handle.001
-    3300000: Door
-    3300002: Handle.001
-    4300000: Door
-    4300002: Handle.001
+    100000: //RootNode
+    400000: //RootNode
+    2100000: ceiling-grate
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: ceiling-grating
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
