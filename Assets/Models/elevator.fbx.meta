@@ -1,0 +1,331 @@
+fileFormatVersion: 2
+guid: 7eb7de3fc00be4a1088d4f731db37838
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Camera
+    100002: Curve.011
+    100004: Curve.021
+    100006: door-plate-frame
+    100008: door-plate-glass
+    100010: door-plate-head-frame
+    100012: door-plate-head-frame.001
+    100014: door-plate-head-glass
+    100016: door-plate-head-glass.001
+    100018: door-plate-wood-frame
+    100020: door-plate-wood-frame.001
+    100022: door-plate-wood-glass
+    100024: door-plate-wood-glass.001
+    100026: //RootNode
+    100028: elevator-door-left
+    100030: elevator-door-right
+    100032: elevator-frame
+    100034: elevator-indicator-down
+    100036: elevator-indicator-up
+    100038: floor
+    100040: glass-door-handle
+    100042: glass-panel
+    100044: glass-panel.001
+    100046: GlassDoor
+    100048: GlassDoor.001
+    100050: Handle
+    100052: handle-plate
+    100054: handle-plate.001
+    100056: Handle.001
+    100058: Handle.002
+    100060: Handle.003
+    100062: Handlebar
+    100064: Handlebar.001
+    100066: innerwall
+    100068: Light
+    100070: Light.001
+    100072: Light.002
+    100074: outerwall
+    100076: Panel
+    100078: Panel.001
+    100080: Panel.002
+    100082: Panel.003
+    100084: Window
+    100086: Window Panel
+    100088: Window Panel.001
+    100090: Window Panel.002
+    100092: WoodenDoor
+    100094: WoodenDoor.001
+    400000: Camera
+    400002: Curve.011
+    400004: Curve.021
+    400006: door-plate-frame
+    400008: door-plate-glass
+    400010: door-plate-head-frame
+    400012: door-plate-head-frame.001
+    400014: door-plate-head-glass
+    400016: door-plate-head-glass.001
+    400018: door-plate-wood-frame
+    400020: door-plate-wood-frame.001
+    400022: door-plate-wood-glass
+    400024: door-plate-wood-glass.001
+    400026: //RootNode
+    400028: elevator-door-left
+    400030: elevator-door-right
+    400032: elevator-frame
+    400034: elevator-indicator-down
+    400036: elevator-indicator-up
+    400038: floor
+    400040: glass-door-handle
+    400042: glass-panel
+    400044: glass-panel.001
+    400046: GlassDoor
+    400048: GlassDoor.001
+    400050: Handle
+    400052: handle-plate
+    400054: handle-plate.001
+    400056: Handle.001
+    400058: Handle.002
+    400060: Handle.003
+    400062: Handlebar
+    400064: Handlebar.001
+    400066: innerwall
+    400068: Light
+    400070: Light.001
+    400072: Light.002
+    400074: outerwall
+    400076: Panel
+    400078: Panel.001
+    400080: Panel.002
+    400082: Panel.003
+    400084: Window
+    400086: Window Panel
+    400088: Window Panel.001
+    400090: Window Panel.002
+    400092: WoodenDoor
+    400094: WoodenDoor.001
+    2000000: Camera
+    2100000: WoodFineDark004_2K.001
+    2100002: glass-door-handle
+    2100004: Glass_material
+    2100006: WoodFineDark004_2K.002
+    2100008: Glass.001
+    2100010: elevator-frame-doors
+    2100012: elevator-indicator-on
+    2100014: elevator-indicator-off
+    2100016: Window_outside
+    2100018: Window_inside
+    2100020: Window_stone
+    2100022: glass-door-inset
+    2100024: BricksPaintedWhite001_2K
+    2100026: Material
+    2100028: No Name
+    2300000: Curve.011
+    2300002: Curve.021
+    2300004: door-plate-frame
+    2300006: door-plate-glass
+    2300008: door-plate-head-frame
+    2300010: door-plate-head-frame.001
+    2300012: door-plate-head-glass
+    2300014: door-plate-head-glass.001
+    2300016: door-plate-wood-frame
+    2300018: door-plate-wood-frame.001
+    2300020: door-plate-wood-glass
+    2300022: door-plate-wood-glass.001
+    2300024: elevator-door-left
+    2300026: elevator-door-right
+    2300028: elevator-frame
+    2300030: elevator-indicator-down
+    2300032: elevator-indicator-up
+    2300034: floor
+    2300036: glass-door-handle
+    2300038: glass-panel
+    2300040: glass-panel.001
+    2300042: GlassDoor
+    2300044: GlassDoor.001
+    2300046: Handle
+    2300048: handle-plate
+    2300050: handle-plate.001
+    2300052: Handle.001
+    2300054: Handle.002
+    2300056: Handle.003
+    2300058: Handlebar
+    2300060: Handlebar.001
+    2300062: innerwall
+    2300064: outerwall
+    2300066: Panel
+    2300068: Panel.001
+    2300070: Panel.002
+    2300072: Panel.003
+    2300074: Window
+    2300076: Window Panel
+    2300078: Window Panel.001
+    2300080: Window Panel.002
+    2300082: WoodenDoor
+    2300084: WoodenDoor.001
+    3300000: Curve.011
+    3300002: Curve.021
+    3300004: door-plate-frame
+    3300006: door-plate-glass
+    3300008: door-plate-head-frame
+    3300010: door-plate-head-frame.001
+    3300012: door-plate-head-glass
+    3300014: door-plate-head-glass.001
+    3300016: door-plate-wood-frame
+    3300018: door-plate-wood-frame.001
+    3300020: door-plate-wood-glass
+    3300022: door-plate-wood-glass.001
+    3300024: elevator-door-left
+    3300026: elevator-door-right
+    3300028: elevator-frame
+    3300030: elevator-indicator-down
+    3300032: elevator-indicator-up
+    3300034: floor
+    3300036: glass-door-handle
+    3300038: glass-panel
+    3300040: glass-panel.001
+    3300042: GlassDoor
+    3300044: GlassDoor.001
+    3300046: Handle
+    3300048: handle-plate
+    3300050: handle-plate.001
+    3300052: Handle.001
+    3300054: Handle.002
+    3300056: Handle.003
+    3300058: Handlebar
+    3300060: Handlebar.001
+    3300062: innerwall
+    3300064: outerwall
+    3300066: Panel
+    3300068: Panel.001
+    3300070: Panel.002
+    3300072: Panel.003
+    3300074: Window
+    3300076: Window Panel
+    3300078: Window Panel.001
+    3300080: Window Panel.002
+    3300082: WoodenDoor
+    3300084: WoodenDoor.001
+    4300000: Curve.021
+    4300002: Curve.011
+    4300004: WoodenDoor
+    4300006: Panel.001
+    4300008: Handle.001
+    4300010: Handle.003
+    4300012: Handlebar
+    4300014: glass-panel
+    4300016: handle-plate
+    4300018: glass-panel.001
+    4300020: handle-plate.001
+    4300022: Panel.003
+    4300024: door-plate-wood-frame
+    4300026: door-plate-wood-glass
+    4300028: elevator-frame
+    4300030: elevator-indicator-down
+    4300032: elevator-indicator-up
+    4300034: elevator-door-right
+    4300036: elevator-door-left
+    4300038: Window
+    4300040: Window Panel
+    4300042: Window Panel.001
+    4300044: Window Panel.002
+    4300046: GlassDoor
+    4300048: Panel
+    4300050: Handle
+    4300052: glass-door-handle
+    4300054: Handle.002
+    4300056: Handlebar.001
+    4300058: Panel.002
+    4300060: door-plate-frame
+    4300062: door-plate-glass
+    4300064: door-plate-head-frame
+    4300066: door-plate-head-glass
+    4300068: door-plate-wood-frame.001
+    4300070: door-plate-wood-glass.001
+    4300072: WoodenDoor.001
+    4300074: GlassDoor.001
+    4300076: door-plate-head-frame.001
+    4300078: door-plate-head-glass.001
+    4300080: outerwall
+    4300082: innerwall
+    4300084: floor
+    10800000: Light
+    10800002: Light.001
+    10800004: Light.002
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
