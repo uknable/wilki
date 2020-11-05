@@ -49,7 +49,27 @@ ModelImporter:
     4300010: door-plate-glass
     4300012: door-plate-head-frame
     4300014: door-plate-head-glass
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass.001
+    second: {fileID: 2100000, guid: 729f6390f39c1544285c9eaad6b8a707, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass_material
+    second: {fileID: 2100000, guid: ff8819fc50af9ae43abbc9bcf9aa005a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass-door-handle
+    second: {fileID: 2100000, guid: 07790e58d0d555a44ada89d61bf62b8e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass-door-inset
+    second: {fileID: 2100000, guid: ebedc266ac34aa94b9a3ba1e8a7fcc89, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
