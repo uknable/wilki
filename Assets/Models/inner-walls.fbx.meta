@@ -6,10 +6,17 @@ ModelImporter:
     100000: //RootNode
     400000: //RootNode
     2100000: Material
+    2100002: inner-wall-brick
+    2100004: inner-wall-flat
     2300000: //RootNode
     3300000: //RootNode
     4300000: innerwall
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 475fb46151bd7dc4c8dec9a8dcb61ffb, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
