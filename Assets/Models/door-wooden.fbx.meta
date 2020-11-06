@@ -1,22 +1,50 @@
 fileFormatVersion: 2
-guid: b9b3f909f0eb55c4d9c55428c6d13971
+guid: d5612813a174b2543b3b90682127bf27
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: floor
-    2100002: Material
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: floor
-    4300002: innerwall
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: floor
-    second: {fileID: 2100000, guid: 57ea4657e9497824386918655be5a7f6, type: 2}
+    100000: door-plate-wood-frame
+    100002: door-plate-wood-glass
+    100004: //RootNode
+    100006: glass-panel
+    100008: handle-plate
+    100010: Handle.001
+    100012: Panel.001
+    100014: WoodenDoor
+    400000: door-plate-wood-frame
+    400002: door-plate-wood-glass
+    400004: //RootNode
+    400006: glass-panel
+    400008: handle-plate
+    400010: Handle.001
+    400012: Panel.001
+    400014: WoodenDoor
+    2100000: WoodFineDark004_2K.001
+    2100002: glass-door-handle
+    2100004: Glass_material
+    2100006: Glass.001
+    2300000: door-plate-wood-frame
+    2300002: door-plate-wood-glass
+    2300004: glass-panel
+    2300006: handle-plate
+    2300008: Handle.001
+    2300010: Panel.001
+    2300012: WoodenDoor
+    3300000: door-plate-wood-frame
+    3300002: door-plate-wood-glass
+    3300004: glass-panel
+    3300006: handle-plate
+    3300008: Handle.001
+    3300010: Panel.001
+    3300012: WoodenDoor
+    4300000: WoodenDoor
+    4300002: Panel.001
+    4300004: Handle.001
+    4300006: glass-panel
+    4300008: handle-plate
+    4300010: door-plate-wood-frame
+    4300012: door-plate-wood-glass
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0

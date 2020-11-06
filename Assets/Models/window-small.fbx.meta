@@ -1,22 +1,33 @@
 fileFormatVersion: 2
-guid: b9b3f909f0eb55c4d9c55428c6d13971
+guid: d2393db4697857248a13da3a1c279a75
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: floor
-    2100002: Material
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: floor
-    4300002: innerwall
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: floor
-    second: {fileID: 2100000, guid: 57ea4657e9497824386918655be5a7f6, type: 2}
+    100000: Window Panel
+    100002: Window Panel.001
+    100004: Window Panel.002
+    100006: //RootNode
+    400000: Window Panel
+    400002: Window Panel.001
+    400004: Window Panel.002
+    400006: //RootNode
+    2100000: Window_outside
+    2100002: Window_inside
+    2100004: Window_stone
+    2100006: Glass.001
+    2300000: Window Panel
+    2300002: Window Panel.001
+    2300004: Window Panel.002
+    2300006: //RootNode
+    3300000: Window Panel
+    3300002: Window Panel.001
+    3300004: Window Panel.002
+    3300006: //RootNode
+    4300000: Window
+    4300002: Window Panel
+    4300004: Window Panel.001
+    4300006: Window Panel.002
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0

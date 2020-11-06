@@ -1,22 +1,15 @@
 fileFormatVersion: 2
-guid: b9b3f909f0eb55c4d9c55428c6d13971
+guid: dfced55c8593d2f49a000ad3e31e408a
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: floor
-    2100002: Material
+    2100000: BricksPaintedWhite001_2K
     2300000: //RootNode
     3300000: //RootNode
-    4300000: floor
-    4300002: innerwall
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: floor
-    second: {fileID: 2100000, guid: 57ea4657e9497824386918655be5a7f6, type: 2}
+    4300000: outerwall
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
