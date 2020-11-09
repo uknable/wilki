@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NarrowDoorOpen : MonoBehaviour {
+public class DoorOpen313 : MonoBehaviour {
 
 	public float openSpeed;
 
 	Animator animator;
-	bool isOpen = false;
+	public bool isOpen = false;
 	GameManager gmScript;
 
 	[SerializeField]
@@ -20,9 +20,13 @@ public class NarrowDoorOpen : MonoBehaviour {
 	}
 
 	void OnTriggerStay(Collider other) {
-		if (other.tag == "Player" && Input.GetMouseButtonDown(0) && gmScript.hasCard) {
+		if (other.tag == "Player" && Input.GetMouseButtonDown(0)) {
 			isOpen = !isOpen;
-			animator.SetBool("NarrowDoorOpen", isOpen);
+			animator.SetBool("DoorOpen313", isOpen);
 		}
+	}
+
+	private void Update() {
+		Debug.Log(gmScript.hasCard);
 	}
 }
