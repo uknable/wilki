@@ -23,6 +23,7 @@ public class DoorOpen313 : MonoBehaviour {
 		if (other.tag == "Player" && Input.GetMouseButtonDown(0)) {
 			isOpen = !isOpen;
 			animator.SetBool("DoorOpen313", isOpen);
+			AkSoundEngine.PostEvent("card_accept", gameObject);
 		}
 	}
 

@@ -1,0 +1,199 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d113a130ef6b7a4f9cfe8c0ed6db7f4, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 766fd0b427667d4086c8ef9a188dd2fa
+    GuidInternal: 
+    m_lastTime: -8585965202446095340
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: ef60feee29149a45b50567c994f2a3bd
+    GuidInternal: 
+    m_lastTime: -8585965202446205060
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 8b08c57925dff749b49d35f2f90e820e
+    GuidInternal: 
+    m_lastTime: -8585962658939243933
+    List:
+    - name: soundbank
+      guid: eec94f08c351ed4db7a22ee3cb14f059
+      id: 1661994096
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: soundbank
+        ObjectType: 7
+      Path: Default Work Unit\soundbank
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: fcbe60f4f32cfe4fa224e16e114642fc
+    GuidInternal: 
+    m_lastTime: -8585962658938579138
+    List:
+    - name: AMB_aircon
+      guid: 6ec64cd17e38b3459c9031953289e013
+      id: 353737842
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambient
+        ObjectType: 4
+      - ElementName: AMB_aircon
+        ObjectType: 3
+      Path: Default Work Unit\Ambient\AMB_aircon
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: AMB_bathroom
+      guid: cbd0a968f324b8448bbe7aca2deb693a
+      id: 492663108
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambient
+        ObjectType: 4
+      - ElementName: AMB_bathroom
+        ObjectType: 3
+      Path: Default Work Unit\Ambient\AMB_bathroom
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Ambient
+      guid: 3a45a093e920704591dd20c18fdcb372
+      id: 77978275
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambient
+        ObjectType: 4
+      Path: Default Work Unit\Ambient
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: card_accept
+      guid: cdc77d431316d5479dc992cb398cf829
+      id: 1546711062
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: card_accept
+        ObjectType: 3
+      Path: Default Work Unit\card_accept
+      maxAttenuation: 0
+      maxDuration: 1.692902
+      minDuration: 1.692902
+    - name: card_reject
+      guid: 67572f3ccdbd0646a0b3bed9f717e496
+      id: 118243955
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: card_reject
+        ObjectType: 3
+      Path: Default Work Unit\card_reject
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: door_close
+      guid: 460079c565815e4287b05f88f762d889
+      id: 128625444
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: door_close
+        ObjectType: 3
+      Path: Default Work Unit\door_close
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 667b7ffb3e377447a388c7a597ab906d
+    GuidInternal: 
+    m_lastTime: -8585965202446225005
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: cf5c583a7c912349b4fcd32afc06ffb5
+    GuidInternal: 
+    m_lastTime: -8585965202446125273
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: b900dd35f244d546922b0cafc169dc94
+    GuidInternal: 
+    m_lastTime: -8585965202446115300
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 2c4fa819aaa9ec429c7f2b012315f6f1
+    GuidInternal: 
+    m_lastTime: -8585965202446105330
+    List: []
+  ExpandedItems:
+  - /wilki_WwiseProject
+  - /wilki_WwiseProject/Auxiliary Busses
+  - /wilki_WwiseProject/Events
+  - /wilki_WwiseProject/Events/Default Work Unit
+  - /wilki_WwiseProject/Events/Default Work Unit/Ambient
+  - /wilki_WwiseProject/SoundBanks
+  - /wilki_WwiseProject/SoundBanks/Default Work Unit
+  - /wilki_WwiseProject/Virtual Acoustics
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 

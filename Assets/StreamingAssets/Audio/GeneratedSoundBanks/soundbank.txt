@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1546711062	card_accept			\Default Work Unit\card_accept	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	748466399	SFX_card-accept	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\SFX_card-accept_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_card-accept		298692
+

@@ -1,0 +1,14 @@
+Event	ID	Name			Wwise Object Path	Notes
+	118243955	card_reject			\Default Work Unit\card_reject	
+	128625444	door_close			\Default Work Unit\door_close	
+	353737842	AMB_aircon			\Default Work Unit\Ambient\AMB_aircon	
+	492663108	AMB_bathroom			\Default Work Unit\Ambient\AMB_bathroom	
+	1546711062	card_accept			\Default Work Unit\card_accept	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	18001423	AMB_aircon	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\AMB_aircon_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB_aircon		5207104
+	207088586	SFX_card-reject	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\SFX_card-reject_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_card-reject		667208
+	375134056	SFX_door-close	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\SFX_door-close_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_door-close		475280
+	503323424	AMB_bathroom	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\AMB_bathroom_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB_bathroom		1410596
+	748466399	SFX_card-accept	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\SFX_card-accept_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_card-accept		298692
+
