@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{79C5088B-DF25-49F7-B49D-35F2F90E820E}" SchemaVersion="97">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{79C5088B-DF25-49F7-B49D-35F2F90E820E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{79C5088B-DF25-49F7-B49D-35F2F90E820E}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="soundbank" ID="{084FC9EE-51C3-4DED-B7A2-2EE3CB14F059}">
+					<ObjectInclusionList>
+						<ObjectRef Name="door_close" ID="{C5790046-8165-425E-87B0-5F88F762D889}" WorkUnitID="{F460BEFC-2CF3-4FFE-A224-E16E114642FC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AMB_bathroom" ID="{68A9D0CB-24F3-44B8-8BBE-7ACA2DEB693A}" WorkUnitID="{F460BEFC-2CF3-4FFE-A224-E16E114642FC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AMB_aircon" ID="{D14CC66E-387E-45B3-9C90-31953289E013}" WorkUnitID="{F460BEFC-2CF3-4FFE-A224-E16E114642FC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="card_reject" ID="{3C2F5767-BDCD-4606-A0B3-BED9F717E496}" WorkUnitID="{F460BEFC-2CF3-4FFE-A224-E16E114642FC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="card_accept" ID="{437DC7CD-1613-47D5-9DC9-92CB398CF829}" WorkUnitID="{F460BEFC-2CF3-4FFE-A224-E16E114642FC}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

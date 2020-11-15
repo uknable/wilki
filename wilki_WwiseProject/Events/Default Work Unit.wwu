@@ -1,6 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F460BEFC-2CF3-4FFE-A224-E16E114642FC}" SchemaVersion="97">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{F460BEFC-2CF3-4FFE-A224-E16E114642FC}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F460BEFC-2CF3-4FFE-A224-E16E114642FC}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="card_accept" ID="{437DC7CD-1613-47D5-9DC9-92CB398CF829}">
+					<ChildrenList>
+						<Action Name="" ID="{C9FFEB8A-AE91-45DE-B428-7A4C1EFE5D50}" ShortID="266999563">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_card-accept" ID="{EB2E9384-D595-4C85-885D-203F57403D0B}" WorkUnitID="{C68E182C-D3CE-466A-97DE-614EDEF22A7B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{82DEF22F-B1C3-49BB-96E1-13FA9556F7CE}" ShortID="273194920">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_card-accept-2" ID="{35313C75-622A-41C3-9930-F4B480537C03}" WorkUnitID="{C68E182C-D3CE-466A-97DE-614EDEF22A7B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="card_reject" ID="{3C2F5767-BDCD-4606-A0B3-BED9F717E496}">
+					<ChildrenList>
+						<Action Name="" ID="{E8C76A04-207A-473E-94B4-19433E100B23}" ShortID="410378165">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_card-reject" ID="{95B6965D-B4E6-4A82-AC8D-3A5DD78C7B47}" WorkUnitID="{C68E182C-D3CE-466A-97DE-614EDEF22A7B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{93D6858B-D852-4F01-88F1-32629E1C415E}" ShortID="843228752">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_card-reject-2" ID="{56341A29-9A4A-4A30-8F3D-6F41922EC304}" WorkUnitID="{C68E182C-D3CE-466A-97DE-614EDEF22A7B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="door_close" ID="{C5790046-8165-425E-87B0-5F88F762D889}">
+					<ChildrenList>
+						<Action Name="" ID="{A7065302-8A08-4694-89AA-66348A1B1090}" ShortID="856388990">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_door-close" ID="{31E4D5D2-E834-4A66-B484-AEE39B180AA6}" WorkUnitID="{C68E182C-D3CE-466A-97DE-614EDEF22A7B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Ambient" ID="{93A0453A-20E9-4570-91DD-20C18FDCB372}" ShortID="849752684">
+					<ChildrenList>
+						<Event Name="AMB_aircon" ID="{D14CC66E-387E-45B3-9C90-31953289E013}">
+							<ChildrenList>
+								<Action Name="" ID="{7CA6F161-B936-46D6-844C-33A9B920C868}" ShortID="1002818818">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMB_aircon" ID="{A0BA5FD7-8B84-4B35-91B4-79B7E46C5B42}" WorkUnitID="{C68E182C-D3CE-466A-97DE-614EDEF22A7B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AMB_bathroom" ID="{68A9D0CB-24F3-44B8-8BBE-7ACA2DEB693A}">
+							<ChildrenList>
+								<Action Name="" ID="{B9EAF81F-A993-434B-A8DD-6F766D5EB382}" ShortID="302494285">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMB_bathroom" ID="{E9723CD1-69C0-41E9-B951-73E845FE5B68}" WorkUnitID="{C68E182C-D3CE-466A-97DE-614EDEF22A7B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E0D1D731-5F42-498A-8A64-AB589D11CA3E}" ShortID="138661486">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMB_bathroom-2" ID="{2FE6F62D-B2BB-405F-9532-14CA40A5A1B5}" WorkUnitID="{C68E182C-D3CE-466A-97DE-614EDEF22A7B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

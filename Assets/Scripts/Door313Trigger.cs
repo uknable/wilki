@@ -21,6 +21,8 @@ public class Door313Trigger : MonoBehaviour {
 			door313Script.isOpen = !door313Script.isOpen;
 			anim.SetBool("DoorOpen313", door313Script.isOpen);
 
+			AkSoundEngine.PostEvent("card_accept", door313);
+
 			Destroy(gameObject);
 		}
 	}
