@@ -26,6 +26,8 @@ public class Card : MonoBehaviour {
 			door313Script.isOpen = !door313Script.isOpen;
 			anim.SetBool("DoorOpen313", door313Script.isOpen);
 
+			AkSoundEngine.PostEvent("door_close", door313);
+
 			gmScript.hasCard = true;
 			Destroy(gameObject);
 		}

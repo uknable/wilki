@@ -2,13 +2,41 @@ Event	ID	Name			Wwise Object Path	Notes
 	118243955	card_reject			\Default Work Unit\card_reject	
 	128625444	door_close			\Default Work Unit\door_close	
 	353737842	AMB_aircon			\Default Work Unit\Ambient\AMB_aircon	
+	393728557	fear_male			\Default Work Unit\Voice\fear_male	
 	492663108	AMB_bathroom			\Default Work Unit\Ambient\AMB_bathroom	
+	535830432	door_open			\Default Work Unit\door_open	
+	1086717530	fear_female			\Default Work Unit\Voice\fear_female	
 	1546711062	card_accept			\Default Work Unit\card_accept	
+	1720944578	AMB_beep			\Default Work Unit\Ambient\AMB_beep	
+	1841879696	AMB_darkwind			\Default Work Unit\Ambient\AMB_darkwind	
+	1866025847	footstep			\Default Work Unit\footstep	
+	3302041772	AMB_rain			\Default Work Unit\Ambient\AMB_rain	
+	4090069850	door_handle			\Default Work Unit\door_handle	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1252796875	Light_Expander	Wwise Expander			
+	2995775460	Room_Small	Wwise RoomVerb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	18001423	AMB_aircon	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\AMB_aircon_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB_aircon		5207104
-	207088586	SFX_card-reject	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\SFX_card-reject_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_card-reject		667208
-	375134056	SFX_door-close	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\SFX_door-close_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_door-close		475280
-	503323424	AMB_bathroom	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\AMB_bathroom_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB_bathroom		1410596
-	748466399	SFX_card-accept	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\SFX_card-accept_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_card-accept		298692
+	18001423	AMB_aircon	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\AMB_aircon_D79FB2B7.wem		\Actor-Mixer Hierarchy\Ambience\AMB_aircon		5207104
+	66252184	VCE_fear3reaper	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\VCE_fear3reaper_D79FB2B7.wem		\Actor-Mixer Hierarchy\Voice\VCE_fear3reaper		3266160
+	207088586	SFX_card-reject	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\SFX_card-reject_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SFX_card-reject		667208
+	227142155	SFX_footsteps-2	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\SFX_footsteps-2_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Footstep\SFX_footsteps-2		135760
+	311573354	SFX_door_handle	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\SFX_door_handle_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SFX_door_handle		406352
+	325492471	SFX_footsteps-3	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\SFX_footsteps-3_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Footstep\SFX_footsteps-3		187228
+	375134056	SFX_door-close	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\SFX_door-close_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SFX_door-close		475280
+	380948175	SFX_footsteps-6	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\SFX_footsteps-6_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Footstep\SFX_footsteps-6		262092
+	503323424	AMB_bathroom	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\AMB_bathroom_10C4C929.wem		\Actor-Mixer Hierarchy\Ambience\AMB_bathroom		1410596
+	527199035	SFX_footsteps-5	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\SFX_footsteps-5_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Footstep\SFX_footsteps-5		203608
+	637399422	SFX_footsteps-8	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\SFX_footsteps-8_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Footstep\SFX_footsteps-8		187232
+	645325197	SFX_door_open	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\SFX_door_open_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SFX_door_open		387832
+	661570949	AMB_reader-beep	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\AMB_reader-beep_10C4C929.wem		\Actor-Mixer Hierarchy\Ambience\AMB_reader-beep		3704896
+	684162146	SFX_footsteps-10	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\SFX_footsteps-10_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Footstep\SFX_footsteps-10		205948
+	705528332	VCE_rainreaper	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\VCE_rainreaper_D79FB2B7.wem		\Actor-Mixer Hierarchy\Ambience\VCE_rainreaper		3266160
+	748466399	SFX_card-accept	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\SFX_card-accept_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SFX_card-accept		298692
+	758218597	VCE_fear2reaper	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\VCE_fear2reaper_D79FB2B7.wem		\Actor-Mixer Hierarchy\Voice\VCE_fear2reaper		3266160
+	858127442	SFX_footsteps-7	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\SFX_footsteps-7_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Footstep\SFX_footsteps-7		177872
+	887690033	SFX_footsteps-4	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\SFX_footsteps-4_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Footstep\SFX_footsteps-4		203608
+	927632515	SFX_footsteps-9	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\SFX_footsteps-9_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Footstep\SFX_footsteps-9		203608
+	970699831	AMB_darkwind	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Windows\SFX\AMB_darkwind_D79FB2B7.wem		\Actor-Mixer Hierarchy\Ambience\AMB_darkwind		3266160
 

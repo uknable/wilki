@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A48AD4A5-CC9D-403B-91EF-A3182BE0FC10}" SchemaVersion="97">
+	<AudioObjects>
+		<WorkUnit Name="Ambience" ID="{A48AD4A5-CC9D-403B-91EF-A3182BE0FC10}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="AMB_beeps-rainy" ID="{DB59FC1A-E7C2-4785-B68D-5133977DE528}" ShortID="840344899">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="AMB_beeps-rainy" ID="{09CAC46A-E7C2-484A-8664-2B8AFD74947B}">
+							<Language>SFX</Language>
+							<AudioFile>AMB_beeps-rainy.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="660202714"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="AMB_beeps-rainy" ID="{09CAC46A-E7C2-484A-8664-2B8AFD74947B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="AMB_bathroom" ID="{E9723CD1-69C0-41E9-B951-73E845FE5B68}" ShortID="322149619">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Ambience" ID="{17B3BA3E-D927-4353-8811-30ACE8B33592}" WorkUnitID="{232DE5AF-50D6-4477-99FE-2F118C3A97C8}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="AMB_bathroom" ID="{B6F44D02-95AD-4B7A-AFDF-EBDEA9FB4590}">
+							<Language>SFX</Language>
+							<AudioFile>AMB_bathroom.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="503323424"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="AMB_bathroom" ID="{B6F44D02-95AD-4B7A-AFDF-EBDEA9FB4590}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="AMB_bathroom-2" ID="{2FE6F62D-B2BB-405F-9532-14CA40A5A1B5}" ShortID="913602986">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="AMB_bathroom-2" ID="{302C8229-0355-4D4E-8D3A-2E005958D4CE}">
+							<Language>SFX</Language>
+							<AudioFile>AMB_bathroom-2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="893793515"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="AMB_bathroom-2" ID="{302C8229-0355-4D4E-8D3A-2E005958D4CE}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="AMB_aircon" ID="{A0BA5FD7-8B84-4B35-91B4-79B7E46C5B42}" ShortID="459550731">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Ambience" ID="{17B3BA3E-D927-4353-8811-30ACE8B33592}" WorkUnitID="{232DE5AF-50D6-4477-99FE-2F118C3A97C8}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="AMB_aircon" ID="{1C28C08C-9858-4419-B3BC-4C91EB0873AF}">
+							<Language>SFX</Language>
+							<AudioFile>AMB_aircon.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="18001423"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="AMB_aircon" ID="{1C28C08C-9858-4419-B3BC-4C91EB0873AF}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="AMB_water-running-2" ID="{0E84F6F8-344C-42DC-BE78-41DF4F2E818A}" ShortID="342756540">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="AMB_water-running-2" ID="{24FDCD08-9F59-45B7-A245-B6351F03A56D}">
+							<Language>SFX</Language>
+							<AudioFile>AMB_water-running-2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="218531301"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="AMB_water-running-2" ID="{24FDCD08-9F59-45B7-A245-B6351F03A56D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="AMB_reader-beep" ID="{DDA01761-4295-4474-AB91-E608241F8AED}" ShortID="767326242">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-20</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Ambience" ID="{17B3BA3E-D927-4353-8811-30ACE8B33592}" WorkUnitID="{232DE5AF-50D6-4477-99FE-2F118C3A97C8}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="AMB_reader-beep" ID="{79E5414A-F6BA-4DFD-A971-35227A7C407D}">
+							<Language>SFX</Language>
+							<AudioFile>AMB_reader-beep.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="661570949"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="AMB_reader-beep" ID="{79E5414A-F6BA-4DFD-A971-35227A7C407D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="AMB_reader-beep-2" ID="{8372B02E-B2E1-41EA-9FF9-D12367F16CCE}" ShortID="163917142">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="AMB_reader-beep-2" ID="{3FAD6E86-EA38-4A4D-90F0-54099EC8D4FB}">
+							<Language>SFX</Language>
+							<AudioFile>AMB_reader-beep-2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="841310490"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="AMB_reader-beep-2" ID="{3FAD6E86-EA38-4A4D-90F0-54099EC8D4FB}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="AMB_static-glitch" ID="{A433C179-C2B3-4A9B-A8C7-AB3B6246A491}" ShortID="117785322">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="AMB_static-glitch" ID="{9E6461A4-EFDA-415E-955F-303C8DF0E56A}">
+							<Language>SFX</Language>
+							<AudioFile>AMB_static-glitch.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="668785064"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="AMB_static-glitch" ID="{9E6461A4-EFDA-415E-955F-303C8DF0E56A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="AMB_rainy-2" ID="{4B1D37AC-F30E-43C6-9EBD-6D09C68B7643}" ShortID="252915690">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="AMB_rainy-2" ID="{E80700C9-B751-4EBD-A2AE-A4F561411256}">
+							<Language>SFX</Language>
+							<AudioFile>AMB_rainy-2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="766225"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="AMB_rainy-2" ID="{E80700C9-B751-4EBD-A2AE-A4F561411256}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="AMB_water-dripping" ID="{9BABA6D8-2020-4897-ADFA-BFA0C21D62C7}" ShortID="666474436">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="AMB_water-dripping" ID="{FDACD359-63CD-4C63-8D5D-EDE77D55868B}">
+							<Language>SFX</Language>
+							<AudioFile>AMB_water-dripping.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="818188674"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="AMB_water-dripping" ID="{FDACD359-63CD-4C63-8D5D-EDE77D55868B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="AMB_rainy-3" ID="{6E09448A-D00E-484A-8159-82D5BB150C62}" ShortID="115146137">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="AMB_rainy-3" ID="{AE9D127B-C5A4-4FD5-90CF-B9DD09E61F11}">
+							<Language>SFX</Language>
+							<AudioFile>AMB_rainy-3.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="217565031"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="AMB_rainy-3" ID="{AE9D127B-C5A4-4FD5-90CF-B9DD09E61F11}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="AMB_rainy-traffic" ID="{B8465D85-1DFD-4442-A0A5-A94AF05FA317}" ShortID="914789941">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="AMB_rainy-traffic" ID="{751CF038-21C9-4A18-B58C-66F642A01CE0}">
+							<Language>SFX</Language>
+							<AudioFile>AMB_rainy-traffic.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="406802096"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="AMB_rainy-traffic" ID="{751CF038-21C9-4A18-B58C-66F642A01CE0}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="AMB_water-running" ID="{97CCDC79-EF53-4704-8D57-29CEEBACDDB4}" ShortID="275179562">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="AMB_water-running" ID="{CC22086C-0259-4A3C-BB3E-B6A38869A4B0}">
+							<Language>SFX</Language>
+							<AudioFile>AMB_water-running.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="144399007"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="AMB_water-running" ID="{CC22086C-0259-4A3C-BB3E-B6A38869A4B0}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="AMB_dark-wind-2" ID="{597EA27C-5CEE-4417-ACAC-A293D50A4E84}" ShortID="797446247">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="AMB_dark-wind-2" ID="{30F03E80-6911-4FDB-8B94-6C45A62259CF}">
+							<Language>SFX</Language>
+							<AudioFile>AMB_dark-wind-2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="725928959"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="AMB_dark-wind-2" ID="{30F03E80-6911-4FDB-8B94-6C45A62259CF}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="AMB_vending-machines" ID="{DCA9CB3C-D2D4-47EC-9EB1-C9B201C8CE88}" ShortID="1018045589">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="AMB_vending-machines" ID="{832409F2-CD9D-43FC-BC55-6FDDDF357E9D}">
+							<Language>SFX</Language>
+							<AudioFile>AMB_vending-machines.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="447954385"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="AMB_vending-machines" ID="{832409F2-CD9D-43FC-BC55-6FDDDF357E9D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="VCE_rainreaper" ID="{F362E872-748A-42A4-9043-1881CCD38389}" ShortID="794741555">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Windows" ID="{791635F4-30A8-44D3-8731-3B0D9BB0D494}" WorkUnitID="{232DE5AF-50D6-4477-99FE-2F118C3A97C8}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="VCE_rainreaper" ID="{A22F23AB-7B3C-4590-948F-6D4317E3E323}">
+							<Language>SFX</Language>
+							<AudioFile>VCE_rainreaper.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="705528332"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="VCE_rainreaper" ID="{A22F23AB-7B3C-4590-948F-6D4317E3E323}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="AMB_darkwind" ID="{2EA8CAA0-1E89-45BE-BF92-0F76C190E380}" ShortID="481451575">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Windows" ID="{791635F4-30A8-44D3-8731-3B0D9BB0D494}" WorkUnitID="{232DE5AF-50D6-4477-99FE-2F118C3A97C8}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="AMB_darkwind" ID="{4D59FF25-24EB-47FB-9AC4-7188F9F9284D}">
+							<Language>SFX</Language>
+							<AudioFile>AMB_darkwind.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="970699831"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="AMB_darkwind" ID="{4D59FF25-24EB-47FB-9AC4-7188F9F9284D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

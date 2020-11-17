@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{091F49A3-B956-4CD4-9C17-AD4881D5B4AF}" SchemaVersion="97">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{091F49A3-B956-4CD4-9C17-AD4881D5B4AF}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{091F49A3-B956-4CD4-9C17-AD4881D5B4AF}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_Wwise_Time_Stretch" ID="{0AA5AEEA-DD17-423B-B294-666195948F3E}" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+					<PropertyList>
+						<Property Name="TimeStretch" Type="Real32" Value="238"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_iZotope_Hybrid_Reverb" ID="{11C11D6A-3B8F-40FF-848F-411AAD1B2651}" PluginName="iZotope Hybrid Reverb" CompanyID="259" PluginID="2" PluginType="3">
+					<PropertyList>
+						<Property Name="DecayTime" Type="Real32" Value="1.8"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

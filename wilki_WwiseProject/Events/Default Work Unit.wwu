@@ -8,7 +8,7 @@
 						<Action Name="" ID="{C9FFEB8A-AE91-45DE-B428-7A4C1EFE5D50}" ShortID="266999563">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="SFX_card-accept" ID="{EB2E9384-D595-4C85-885D-203F57403D0B}" WorkUnitID="{C68E182C-D3CE-466A-97DE-614EDEF22A7B}"/>
+									<ObjectRef Name="SFX_card-accept" ID="{EB2E9384-D595-4C85-885D-203F57403D0B}" WorkUnitID="{F53BAD37-8F5D-4CE5-BC6A-D6096A956110}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -22,7 +22,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="SFX_card-accept-2" ID="{35313C75-622A-41C3-9930-F4B480537C03}" WorkUnitID="{C68E182C-D3CE-466A-97DE-614EDEF22A7B}"/>
+									<ObjectRef Name="SFX_card-accept-2" ID="{35313C75-622A-41C3-9930-F4B480537C03}" WorkUnitID="{F53BAD37-8F5D-4CE5-BC6A-D6096A956110}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -33,7 +33,7 @@
 						<Action Name="" ID="{E8C76A04-207A-473E-94B4-19433E100B23}" ShortID="410378165">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="SFX_card-reject" ID="{95B6965D-B4E6-4A82-AC8D-3A5DD78C7B47}" WorkUnitID="{C68E182C-D3CE-466A-97DE-614EDEF22A7B}"/>
+									<ObjectRef Name="SFX_card-reject" ID="{95B6965D-B4E6-4A82-AC8D-3A5DD78C7B47}" WorkUnitID="{F53BAD37-8F5D-4CE5-BC6A-D6096A956110}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -47,7 +47,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="SFX_card-reject-2" ID="{56341A29-9A4A-4A30-8F3D-6F41922EC304}" WorkUnitID="{C68E182C-D3CE-466A-97DE-614EDEF22A7B}"/>
+									<ObjectRef Name="SFX_card-reject-2" ID="{56341A29-9A4A-4A30-8F3D-6F41922EC304}" WorkUnitID="{F53BAD37-8F5D-4CE5-BC6A-D6096A956110}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -58,7 +58,7 @@
 						<Action Name="" ID="{A7065302-8A08-4694-89AA-66348A1B1090}" ShortID="856388990">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="SFX_door-close" ID="{31E4D5D2-E834-4A66-B484-AEE39B180AA6}" WorkUnitID="{C68E182C-D3CE-466A-97DE-614EDEF22A7B}"/>
+									<ObjectRef Name="SFX_door-close" ID="{31E4D5D2-E834-4A66-B484-AEE39B180AA6}" WorkUnitID="{F53BAD37-8F5D-4CE5-BC6A-D6096A956110}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -71,7 +71,7 @@
 								<Action Name="" ID="{7CA6F161-B936-46D6-844C-33A9B920C868}" ShortID="1002818818">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="AMB_aircon" ID="{A0BA5FD7-8B84-4B35-91B4-79B7E46C5B42}" WorkUnitID="{C68E182C-D3CE-466A-97DE-614EDEF22A7B}"/>
+											<ObjectRef Name="AMB_aircon" ID="{A0BA5FD7-8B84-4B35-91B4-79B7E46C5B42}" WorkUnitID="{A48AD4A5-CC9D-403B-91EF-A3182BE0FC10}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -82,7 +82,7 @@
 								<Action Name="" ID="{B9EAF81F-A993-434B-A8DD-6F766D5EB382}" ShortID="302494285">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="AMB_bathroom" ID="{E9723CD1-69C0-41E9-B951-73E845FE5B68}" WorkUnitID="{C68E182C-D3CE-466A-97DE-614EDEF22A7B}"/>
+											<ObjectRef Name="AMB_bathroom" ID="{E9723CD1-69C0-41E9-B951-73E845FE5B68}" WorkUnitID="{A48AD4A5-CC9D-403B-91EF-A3182BE0FC10}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -96,7 +96,40 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="AMB_bathroom-2" ID="{2FE6F62D-B2BB-405F-9532-14CA40A5A1B5}" WorkUnitID="{C68E182C-D3CE-466A-97DE-614EDEF22A7B}"/>
+											<ObjectRef Name="AMB_bathroom-2" ID="{2FE6F62D-B2BB-405F-9532-14CA40A5A1B5}" WorkUnitID="{A48AD4A5-CC9D-403B-91EF-A3182BE0FC10}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AMB_rain" ID="{6A26B1A1-ADFD-40B3-B223-137CC27BCD64}">
+							<ChildrenList>
+								<Action Name="" ID="{0025E34C-9EEE-4660-9672-F2AA664AE19C}" ShortID="786734128">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VCE_rainreaper" ID="{F362E872-748A-42A4-9043-1881CCD38389}" WorkUnitID="{A48AD4A5-CC9D-403B-91EF-A3182BE0FC10}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AMB_darkwind" ID="{BAA773E5-C8BF-4539-9E14-A6A6DE5EB925}">
+							<ChildrenList>
+								<Action Name="" ID="{69C10E62-2EBD-43F9-905B-7E160FEB52C5}" ShortID="417884050">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMB_darkwind" ID="{2EA8CAA0-1E89-45BE-BF92-0F76C190E380}" WorkUnitID="{A48AD4A5-CC9D-403B-91EF-A3182BE0FC10}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AMB_beep" ID="{0A3CE24A-AA77-4CA0-9009-1EEBA05639CD}">
+							<ChildrenList>
+								<Action Name="" ID="{E7F1B0F5-5B00-4235-B135-36880D57A06A}" ShortID="466671088">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMB_reader-beep" ID="{DDA01761-4295-4474-AB91-E608241F8AED}" WorkUnitID="{A48AD4A5-CC9D-403B-91EF-A3182BE0FC10}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -104,6 +137,65 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="footstep" ID="{D7F8E3A6-86D1-430C-BF51-A8161709E3EB}">
+					<ChildrenList>
+						<Action Name="" ID="{60C71219-BE77-4084-B8E8-C1D3A1FF3E50}" ShortID="576361956">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footstep" ID="{401C518F-B043-4D2A-B2EC-17D6C04A12B6}" WorkUnitID="{F53BAD37-8F5D-4CE5-BC6A-D6096A956110}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Voice" ID="{9055B66D-68EC-4767-8AFD-0FED44000BA1}" ShortID="849470070">
+					<ChildrenList>
+						<Event Name="fear_male" ID="{59371BD1-32A2-4C39-8175-D574FA933CBA}">
+							<ChildrenList>
+								<Action Name="" ID="{62CC6601-C68A-433A-AB76-30E443FAC66B}" ShortID="646110486">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VCE_fear2reaper" ID="{2A16C800-D4B2-4845-9F23-C4DBF1268DC0}" WorkUnitID="{9205D99B-075A-492C-A132-3E3238982B98}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="fear_female" ID="{3FBDBE9A-C6F2-4126-B177-C23375F7ED59}">
+							<ChildrenList>
+								<Action Name="" ID="{ED0582D5-A5EF-43C6-9ECD-C4E6DDB3C9EB}" ShortID="160812957">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VCE_fear3reaper" ID="{B608943E-5712-4539-BCD8-F21B7A3234DE}" WorkUnitID="{9205D99B-075A-492C-A132-3E3238982B98}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="door_open" ID="{1C6E9AE6-4003-4BEF-B738-5F04EA3EAB1C}">
+					<ChildrenList>
+						<Action Name="" ID="{C6CD904E-FD22-4620-B825-C5BE7A6FFF22}" ShortID="943783307">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_door_open" ID="{442B09CA-2279-4917-B24C-A0AEBE24848A}" WorkUnitID="{F53BAD37-8F5D-4CE5-BC6A-D6096A956110}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="door_handle" ID="{23EBD1B7-A45C-41A0-8B20-55FBEED40A00}">
+					<ChildrenList>
+						<Action Name="" ID="{8DB4A8AD-D2D7-4306-910B-F42AA0DFB54E}" ShortID="1033157696">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_door_handle" ID="{03AFADE0-3430-4618-A026-812D16465F7E}" WorkUnitID="{F53BAD37-8F5D-4CE5-BC6A-D6096A956110}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

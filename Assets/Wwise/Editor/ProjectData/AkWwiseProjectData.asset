@@ -20,7 +20,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 766fd0b427667d4086c8ef9a188dd2fa
     GuidInternal: 
-    m_lastTime: -8585965202446095340
+    m_lastTime: -8585961995977483866
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: ef60feee29149a45b50567c994f2a3bd
     GuidInternal: 
-    m_lastTime: -8585965202446205060
+    m_lastTime: -8585961995991563717
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -49,7 +49,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 8b08c57925dff749b49d35f2f90e820e
     GuidInternal: 
-    m_lastTime: -8585962658939243933
+    m_lastTime: -8585960140070942236
     List:
     - name: soundbank
       guid: eec94f08c351ed4db7a22ee3cb14f059
@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: fcbe60f4f32cfe4fa224e16e114642fc
     GuidInternal: 
-    m_lastTime: -8585962658938579138
+    m_lastTime: -8585960140293055745
     List:
     - name: AMB_aircon
       guid: 6ec64cd17e38b3459c9031953289e013
@@ -95,6 +95,48 @@ MonoBehaviour:
       - ElementName: AMB_bathroom
         ObjectType: 3
       Path: Default Work Unit\Ambient\AMB_bathroom
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: AMB_beep
+      guid: 4ae23c0a77aaa04c90091eeba05639cd
+      id: 1720944578
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambient
+        ObjectType: 4
+      - ElementName: AMB_beep
+        ObjectType: 3
+      Path: Default Work Unit\Ambient\AMB_beep
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: AMB_darkwind
+      guid: e573a7babfc839459e14a6a6de5eb925
+      id: 1841879696
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambient
+        ObjectType: 4
+      - ElementName: AMB_darkwind
+        ObjectType: 3
+      Path: Default Work Unit\Ambient\AMB_darkwind
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: AMB_rain
+      guid: a1b1266afdadb340b223137cc27bcd64
+      id: 3302041772
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambient
+        ObjectType: 4
+      - ElementName: AMB_rain
+        ObjectType: 3
+      Path: Default Work Unit\Ambient\AMB_rain
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -146,6 +188,82 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: door_handle
+      guid: b7d1eb235ca4a0418b2055fbeed40a00
+      id: 4090069850
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: door_handle
+        ObjectType: 3
+      Path: Default Work Unit\door_handle
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: door_open
+      guid: e69a6e1c0340ef4bb7385f04ea3eab1c
+      id: 535830432
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: door_open
+        ObjectType: 3
+      Path: Default Work Unit\door_open
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: fear_female
+      guid: 9abebd3ff2c62641b177c23375f7ed59
+      id: 1086717530
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voice
+        ObjectType: 4
+      - ElementName: fear_female
+        ObjectType: 3
+      Path: Default Work Unit\Voice\fear_female
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: fear_male
+      guid: d11b3759a232394c8175d574fa933cba
+      id: 393728557
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voice
+        ObjectType: 4
+      - ElementName: fear_male
+        ObjectType: 3
+      Path: Default Work Unit\Voice\fear_male
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: footstep
+      guid: a6e3f8d7d1860c43bf51a8161709e3eb
+      id: 1866025847
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: footstep
+        ObjectType: 3
+      Path: Default Work Unit\footstep
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Voice
+      guid: 6db65590ec6867478afd0fed44000ba1
+      id: 3170124113
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voice
+        ObjectType: 4
+      Path: Default Work Unit\Voice
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -154,7 +272,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 667b7ffb3e377447a388c7a597ab906d
     GuidInternal: 
-    m_lastTime: -8585965202446225005
+    m_lastTime: -8585961995991583659
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -164,7 +282,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: cf5c583a7c912349b4fcd32afc06ffb5
     GuidInternal: 
-    m_lastTime: -8585965202446125273
+    m_lastTime: -8585961995977523753
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -174,7 +292,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: b900dd35f244d546922b0cafc169dc94
     GuidInternal: 
-    m_lastTime: -8585965202446115300
+    m_lastTime: -8585961995977513790
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -184,7 +302,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2c4fa819aaa9ec429c7f2b012315f6f1
     GuidInternal: 
-    m_lastTime: -8585965202446105330
+    m_lastTime: -8585961995977503812
     List: []
   ExpandedItems:
   - /wilki_WwiseProject
@@ -192,6 +310,7 @@ MonoBehaviour:
   - /wilki_WwiseProject/Events
   - /wilki_WwiseProject/Events/Default Work Unit
   - /wilki_WwiseProject/Events/Default Work Unit/Ambient
+  - /wilki_WwiseProject/Events/Default Work Unit/Voice
   - /wilki_WwiseProject/SoundBanks
   - /wilki_WwiseProject/SoundBanks/Default Work Unit
   - /wilki_WwiseProject/Virtual Acoustics

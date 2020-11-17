@@ -5,11 +5,19 @@
 			<ChildrenList>
 				<SoundBank Name="soundbank" ID="{084FC9EE-51C3-4DED-B7A2-2EE3CB14F059}">
 					<ObjectInclusionList>
+						<ObjectRef Name="AMB_rain" ID="{6A26B1A1-ADFD-40B3-B223-137CC27BCD64}" WorkUnitID="{F460BEFC-2CF3-4FFE-A224-E16E114642FC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="fear_female" ID="{3FBDBE9A-C6F2-4126-B177-C23375F7ED59}" WorkUnitID="{F460BEFC-2CF3-4FFE-A224-E16E114642FC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="door_handle" ID="{23EBD1B7-A45C-41A0-8B20-55FBEED40A00}" WorkUnitID="{F460BEFC-2CF3-4FFE-A224-E16E114642FC}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="door_close" ID="{C5790046-8165-425E-87B0-5F88F762D889}" WorkUnitID="{F460BEFC-2CF3-4FFE-A224-E16E114642FC}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_bathroom" ID="{68A9D0CB-24F3-44B8-8BBE-7ACA2DEB693A}" WorkUnitID="{F460BEFC-2CF3-4FFE-A224-E16E114642FC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AMB_darkwind" ID="{BAA773E5-C8BF-4539-9E14-A6A6DE5EB925}" WorkUnitID="{F460BEFC-2CF3-4FFE-A224-E16E114642FC}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_aircon" ID="{D14CC66E-387E-45B3-9C90-31953289E013}" WorkUnitID="{F460BEFC-2CF3-4FFE-A224-E16E114642FC}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="card_reject" ID="{3C2F5767-BDCD-4606-A0B3-BED9F717E496}" WorkUnitID="{F460BEFC-2CF3-4FFE-A224-E16E114642FC}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="card_accept" ID="{437DC7CD-1613-47D5-9DC9-92CB398CF829}" WorkUnitID="{F460BEFC-2CF3-4FFE-A224-E16E114642FC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="door_open" ID="{1C6E9AE6-4003-4BEF-B738-5F04EA3EAB1C}" WorkUnitID="{F460BEFC-2CF3-4FFE-A224-E16E114642FC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="fear_male" ID="{59371BD1-32A2-4C39-8175-D574FA933CBA}" WorkUnitID="{F460BEFC-2CF3-4FFE-A224-E16E114642FC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AMB_beep" ID="{0A3CE24A-AA77-4CA0-9009-1EEBA05639CD}" WorkUnitID="{F460BEFC-2CF3-4FFE-A224-E16E114642FC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Footstep" ID="{401C518F-B043-4D2A-B2EC-17D6C04A12B6}" WorkUnitID="{F53BAD37-8F5D-4CE5-BC6A-D6096A956110}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
