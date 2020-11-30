@@ -3,7 +3,12 @@ guid: b764bf9b117153440bcc5e4b0386cbd8
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Drevo.002
+    second: {fileID: 2100000, guid: a9df617bf37fc7f459fcadaa82e98f47, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

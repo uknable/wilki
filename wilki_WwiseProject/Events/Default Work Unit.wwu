@@ -3,75 +3,14 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{F460BEFC-2CF3-4FFE-A224-E16E114642FC}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="card_accept" ID="{437DC7CD-1613-47D5-9DC9-92CB398CF829}">
-					<ChildrenList>
-						<Action Name="" ID="{C9FFEB8A-AE91-45DE-B428-7A4C1EFE5D50}" ShortID="266999563">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SFX_card-accept" ID="{EB2E9384-D595-4C85-885D-203F57403D0B}" WorkUnitID="{F53BAD37-8F5D-4CE5-BC6A-D6096A956110}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{82DEF22F-B1C3-49BB-96E1-13FA9556F7CE}" ShortID="273194920">
-							<PropertyList>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SFX_card-accept-2" ID="{35313C75-622A-41C3-9930-F4B480537C03}" WorkUnitID="{F53BAD37-8F5D-4CE5-BC6A-D6096A956110}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="card_reject" ID="{3C2F5767-BDCD-4606-A0B3-BED9F717E496}">
-					<ChildrenList>
-						<Action Name="" ID="{E8C76A04-207A-473E-94B4-19433E100B23}" ShortID="410378165">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SFX_card-reject" ID="{95B6965D-B4E6-4A82-AC8D-3A5DD78C7B47}" WorkUnitID="{F53BAD37-8F5D-4CE5-BC6A-D6096A956110}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{93D6858B-D852-4F01-88F1-32629E1C415E}" ShortID="843228752">
-							<PropertyList>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SFX_card-reject-2" ID="{56341A29-9A4A-4A30-8F3D-6F41922EC304}" WorkUnitID="{F53BAD37-8F5D-4CE5-BC6A-D6096A956110}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="door_close" ID="{C5790046-8165-425E-87B0-5F88F762D889}">
-					<ChildrenList>
-						<Action Name="" ID="{A7065302-8A08-4694-89AA-66348A1B1090}" ShortID="856388990">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SFX_door-close" ID="{31E4D5D2-E834-4A66-B484-AEE39B180AA6}" WorkUnitID="{F53BAD37-8F5D-4CE5-BC6A-D6096A956110}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="Ambient" ID="{93A0453A-20E9-4570-91DD-20C18FDCB372}" ShortID="849752684">
 					<ChildrenList>
 						<Event Name="AMB_aircon" ID="{D14CC66E-387E-45B3-9C90-31953289E013}">
 							<ChildrenList>
-								<Action Name="" ID="{7CA6F161-B936-46D6-844C-33A9B920C868}" ShortID="1002818818">
+								<Action Name="" ID="{92C71CB8-C06D-4185-92D3-5192A5936CA0}" ShortID="328285712">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="AMB_aircon" ID="{A0BA5FD7-8B84-4B35-91B4-79B7E46C5B42}" WorkUnitID="{A48AD4A5-CC9D-403B-91EF-A3182BE0FC10}"/>
+											<ObjectRef Name="AMB-aircon" ID="{43F00C51-24BD-499D-AB69-1A2F7DEE0266}" WorkUnitID="{A48AD4A5-CC9D-403B-91EF-A3182BE0FC10}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -86,7 +25,159 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{E0D1D731-5F42-498A-8A64-AB589D11CA3E}" ShortID="138661486">
+							</ChildrenList>
+						</Event>
+						<Event Name="AMB_rain" ID="{6A26B1A1-ADFD-40B3-B223-137CC27BCD64}"/>
+						<Event Name="AMB_darkwind" ID="{BAA773E5-C8BF-4539-9E14-A6A6DE5EB925}">
+							<ChildrenList>
+								<Action Name="" ID="{282565B7-2B9D-46FB-B343-28B00CE7B890}" ShortID="1034544053">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMB-darkwind-consolidated" ID="{B4941F62-87B4-4AD8-BD46-55364D5DE481}" WorkUnitID="{A48AD4A5-CC9D-403B-91EF-A3182BE0FC10}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AMB_beep" ID="{0A3CE24A-AA77-4CA0-9009-1EEBA05639CD}">
+							<ChildrenList>
+								<Action Name="" ID="{9BE80709-A21A-4896-A1FB-843D677B60C9}" ShortID="337234373">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMB-beep" ID="{5AFD9941-7038-4A09-BC7E-E3974237781C}" WorkUnitID="{A48AD4A5-CC9D-403B-91EF-A3182BE0FC10}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AMB_traffic" ID="{AAAAC56A-EDC8-48EE-A9C7-7942544EE02F}">
+							<ChildrenList>
+								<Action Name="" ID="{7CFDBDFD-B929-4DC0-A1CD-1F784D197172}" ShortID="826871141">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMB-traffic" ID="{4219A76B-CC6A-443C-A382-4F87A0C932FD}" WorkUnitID="{A48AD4A5-CC9D-403B-91EF-A3182BE0FC10}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AMB_machine" ID="{55E61BF5-C56F-47DB-975B-0114967BAB1B}">
+							<ChildrenList>
+								<Action Name="" ID="{BB3047A9-88A9-4FC9-B635-90D571A3E948}" ShortID="611087205">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMB-machine" ID="{FCEE0C7D-6481-46C0-81DB-B85F4952CCD7}" WorkUnitID="{A48AD4A5-CC9D-403B-91EF-A3182BE0FC10}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Voice" ID="{9055B66D-68EC-4767-8AFD-0FED44000BA1}" ShortID="849470070">
+					<ChildrenList>
+						<Event Name="VCE_andrew_soft" ID="{E6E09D5B-69ED-4796-A512-6D36E67404E4}">
+							<ChildrenList>
+								<Action Name="" ID="{1D9AB543-1F27-4307-A1E1-A84ED8F3DEF7}" ShortID="358165204">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VCE_andrew_soft" ID="{F15119C2-F0F7-4D8A-A7D3-D2241E1EEFD1}" WorkUnitID="{9205D99B-075A-492C-A132-3E3238982B98}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VCE_andrew_medium" ID="{09B523F4-BBF2-48AC-823B-A1BB82CF0F83}">
+							<ChildrenList>
+								<Action Name="" ID="{9C611234-9FE4-4B8C-BE5C-9022F5B1B3DF}" ShortID="1069887929">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VCE_andrew_medium" ID="{9A727273-20E2-449C-A567-E24BBB0B2104}" WorkUnitID="{9205D99B-075A-492C-A132-3E3238982B98}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VCE_andrew_loud" ID="{266D1997-3AD6-467C-B980-68C853FA062A}">
+							<ChildrenList>
+								<Action Name="" ID="{E98C3A97-A14F-483C-9E08-B9184F6408C4}" ShortID="883743280">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VCE_andrew_loud" ID="{1BE3D575-F2B8-4300-87E3-0C8A5C4CF018}" WorkUnitID="{9205D99B-075A-492C-A132-3E3238982B98}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VCE_wendy_soft" ID="{39EA137E-ADD6-4E96-92EB-38DA628CD3A2}">
+							<ChildrenList>
+								<Action Name="" ID="{C8EF5AFE-F3D3-4EE4-BC87-14EBA6B2E29B}" ShortID="478361268">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VCE_wendy_soft" ID="{CF3732B8-913B-44BD-8FF1-84C0EB85CF9F}" WorkUnitID="{9205D99B-075A-492C-A132-3E3238982B98}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VCE_wendy_medium" ID="{7A72FC11-551E-4D7F-9BBF-E48FF5CEEC4B}">
+							<ChildrenList>
+								<Action Name="" ID="{D1F15743-7FF7-404A-9571-1A7F04FD4CEE}" ShortID="694620445">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VCE_wendy_medium" ID="{A8170E86-2D49-4543-8581-FBA0CB2433F8}" WorkUnitID="{9205D99B-075A-492C-A132-3E3238982B98}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VCE_wendy_loud" ID="{F350293C-7CD3-45DA-9E53-F84CD947C4F9}">
+							<ChildrenList>
+								<Action Name="" ID="{C7C96136-5205-44C3-BB1B-65EF96D67245}" ShortID="546250962">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VCE_wendy_loud" ID="{CB35ACE3-E879-4E6F-908E-B0A4B7784D5F}" WorkUnitID="{9205D99B-075A-492C-A132-3E3238982B98}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VCE_scream" ID="{C4F6F7F9-037D-4BAE-8507-62C390CC4793}">
+							<ChildrenList>
+								<Action Name="" ID="{3BA00D5D-7C0C-40C1-A842-CF570971E1FF}" ShortID="463601226">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="05-VCE_scream" ID="{13926605-1A5D-4380-9881-AB83F6E5E07A}" WorkUnitID="{9205D99B-075A-492C-A132-3E3238982B98}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SFX" ID="{164BCA3A-BDDB-45B2-A0E6-098CA376F0D5}" ShortID="478939962">
+					<ChildrenList>
+						<Event Name="door_close" ID="{C5790046-8165-425E-87B0-5F88F762D889}">
+							<ChildrenList>
+								<Action Name="" ID="{A7065302-8A08-4694-89AA-66348A1B1090}" ShortID="856388990">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_door-close" ID="{31E4D5D2-E834-4A66-B484-AEE39B180AA6}" WorkUnitID="{F53BAD37-8F5D-4CE5-BC6A-D6096A956110}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="card_accept" ID="{437DC7CD-1613-47D5-9DC9-92CB398CF829}">
+							<ChildrenList>
+								<Action Name="" ID="{C9FFEB8A-AE91-45DE-B428-7A4C1EFE5D50}" ShortID="266999563">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_card-accept" ID="{EB2E9384-D595-4C85-885D-203F57403D0B}" WorkUnitID="{F53BAD37-8F5D-4CE5-BC6A-D6096A956110}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{82DEF22F-B1C3-49BB-96E1-13FA9556F7CE}" ShortID="273194920">
 									<PropertyList>
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
@@ -96,40 +187,65 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="AMB_bathroom-2" ID="{2FE6F62D-B2BB-405F-9532-14CA40A5A1B5}" WorkUnitID="{A48AD4A5-CC9D-403B-91EF-A3182BE0FC10}"/>
+											<ObjectRef Name="SFX_card-accept-2" ID="{35313C75-622A-41C3-9930-F4B480537C03}" WorkUnitID="{F53BAD37-8F5D-4CE5-BC6A-D6096A956110}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="AMB_rain" ID="{6A26B1A1-ADFD-40B3-B223-137CC27BCD64}">
+						<Event Name="card_reject" ID="{3C2F5767-BDCD-4606-A0B3-BED9F717E496}">
 							<ChildrenList>
-								<Action Name="" ID="{0025E34C-9EEE-4660-9672-F2AA664AE19C}" ShortID="786734128">
+								<Action Name="" ID="{E8C76A04-207A-473E-94B4-19433E100B23}" ShortID="410378165">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="VCE_rainreaper" ID="{F362E872-748A-42A4-9043-1881CCD38389}" WorkUnitID="{A48AD4A5-CC9D-403B-91EF-A3182BE0FC10}"/>
+											<ObjectRef Name="SFX_card-reject" ID="{95B6965D-B4E6-4A82-AC8D-3A5DD78C7B47}" WorkUnitID="{F53BAD37-8F5D-4CE5-BC6A-D6096A956110}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{93D6858B-D852-4F01-88F1-32629E1C415E}" ShortID="843228752">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_card-reject-2" ID="{56341A29-9A4A-4A30-8F3D-6F41922EC304}" WorkUnitID="{F53BAD37-8F5D-4CE5-BC6A-D6096A956110}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="AMB_darkwind" ID="{BAA773E5-C8BF-4539-9E14-A6A6DE5EB925}">
+						<Event Name="door_open" ID="{1C6E9AE6-4003-4BEF-B738-5F04EA3EAB1C}">
 							<ChildrenList>
-								<Action Name="" ID="{69C10E62-2EBD-43F9-905B-7E160FEB52C5}" ShortID="417884050">
+								<Action Name="" ID="{C6CD904E-FD22-4620-B825-C5BE7A6FFF22}" ShortID="943783307">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="AMB_darkwind" ID="{2EA8CAA0-1E89-45BE-BF92-0F76C190E380}" WorkUnitID="{A48AD4A5-CC9D-403B-91EF-A3182BE0FC10}"/>
+											<ObjectRef Name="SFX_door_open" ID="{442B09CA-2279-4917-B24C-A0AEBE24848A}" WorkUnitID="{F53BAD37-8F5D-4CE5-BC6A-D6096A956110}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="AMB_beep" ID="{0A3CE24A-AA77-4CA0-9009-1EEBA05639CD}">
+						<Event Name="footstep" ID="{D7F8E3A6-86D1-430C-BF51-A8161709E3EB}">
 							<ChildrenList>
-								<Action Name="" ID="{E7F1B0F5-5B00-4235-B135-36880D57A06A}" ShortID="466671088">
+								<Action Name="" ID="{60C71219-BE77-4084-B8E8-C1D3A1FF3E50}" ShortID="576361956">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="AMB_reader-beep" ID="{DDA01761-4295-4474-AB91-E608241F8AED}" WorkUnitID="{A48AD4A5-CC9D-403B-91EF-A3182BE0FC10}"/>
+											<ObjectRef Name="Footstep" ID="{401C518F-B043-4D2A-B2EC-17D6C04A12B6}" WorkUnitID="{F53BAD37-8F5D-4CE5-BC6A-D6096A956110}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="door_handle" ID="{23EBD1B7-A45C-41A0-8B20-55FBEED40A00}">
+							<ChildrenList>
+								<Action Name="" ID="{8DB4A8AD-D2D7-4306-910B-F42AA0DFB54E}" ShortID="1033157696">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_door_handle" ID="{03AFADE0-3430-4618-A026-812D16465F7E}" WorkUnitID="{F53BAD37-8F5D-4CE5-BC6A-D6096A956110}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -137,65 +253,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="footstep" ID="{D7F8E3A6-86D1-430C-BF51-A8161709E3EB}">
-					<ChildrenList>
-						<Action Name="" ID="{60C71219-BE77-4084-B8E8-C1D3A1FF3E50}" ShortID="576361956">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Footstep" ID="{401C518F-B043-4D2A-B2EC-17D6C04A12B6}" WorkUnitID="{F53BAD37-8F5D-4CE5-BC6A-D6096A956110}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Folder Name="Voice" ID="{9055B66D-68EC-4767-8AFD-0FED44000BA1}" ShortID="849470070">
-					<ChildrenList>
-						<Event Name="fear_male" ID="{59371BD1-32A2-4C39-8175-D574FA933CBA}">
-							<ChildrenList>
-								<Action Name="" ID="{62CC6601-C68A-433A-AB76-30E443FAC66B}" ShortID="646110486">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="VCE_fear2reaper" ID="{2A16C800-D4B2-4845-9F23-C4DBF1268DC0}" WorkUnitID="{9205D99B-075A-492C-A132-3E3238982B98}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="fear_female" ID="{3FBDBE9A-C6F2-4126-B177-C23375F7ED59}">
-							<ChildrenList>
-								<Action Name="" ID="{ED0582D5-A5EF-43C6-9ECD-C4E6DDB3C9EB}" ShortID="160812957">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="VCE_fear3reaper" ID="{B608943E-5712-4539-BCD8-F21B7A3234DE}" WorkUnitID="{9205D99B-075A-492C-A132-3E3238982B98}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
-				<Event Name="door_open" ID="{1C6E9AE6-4003-4BEF-B738-5F04EA3EAB1C}">
-					<ChildrenList>
-						<Action Name="" ID="{C6CD904E-FD22-4620-B825-C5BE7A6FFF22}" ShortID="943783307">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SFX_door_open" ID="{442B09CA-2279-4917-B24C-A0AEBE24848A}" WorkUnitID="{F53BAD37-8F5D-4CE5-BC6A-D6096A956110}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="door_handle" ID="{23EBD1B7-A45C-41A0-8B20-55FBEED40A00}">
-					<ChildrenList>
-						<Action Name="" ID="{8DB4A8AD-D2D7-4306-910B-F42AA0DFB54E}" ShortID="1033157696">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SFX_door_handle" ID="{03AFADE0-3430-4618-A026-812D16465F7E}" WorkUnitID="{F53BAD37-8F5D-4CE5-BC6A-D6096A956110}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

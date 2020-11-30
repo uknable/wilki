@@ -24,6 +24,7 @@ public class HomeCorridorTrigger : MonoBehaviour
 
         if (doorHomeAnim.GetBool("NarrowDoorOpen") == true) {
             doorHomeAnim.SetBool("NarrowDoorOpen", false);
+            AkSoundEngine.PostEvent("door_close", gameObject);
         }
 
         endBlockade.SetActive(true);

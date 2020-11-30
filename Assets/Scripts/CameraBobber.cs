@@ -35,7 +35,7 @@ public class CameraBobber : MonoBehaviour {
             timer += Time.deltaTime * walkingBobbingSpeed;
             transform.localPosition = new Vector3(transform.localPosition.x, defaultPosY + Mathf.Sin(timer) * bobbingAmount, transform.localPosition.z);
         
-            Debug.Log(Mathf.Abs(Mathf.Sin(timer)));
+            // Debug.Log(Mathf.Abs(Mathf.Sin(timer)));
 
             if (Mathf.Abs(Mathf.Sin(timer)) > 0.95 && !footstepOnCD) {
                 AkSoundEngine.PostEvent("footstep", gameObject);

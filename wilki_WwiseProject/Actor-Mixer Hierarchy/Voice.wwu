@@ -3,9 +3,32 @@
 	<AudioObjects>
 		<WorkUnit Name="Voice" ID="{9205D99B-075A-492C-A132-3E3238982B98}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="VCE_fear2reaper" ID="{2A16C800-D4B2-4845-9F23-C4DBF1268DC0}" ShortID="735557118">
+				<RandomSequenceContainer Name="VCE_andrew_soft" ID="{F15119C2-F0F7-4D8A-A7D3-D2241E1EEFD1}" ShortID="533913109">
 					<PropertyList>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="3DPosition" Type="int16" Value="1"/>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="InitialDelay" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{9B7585A1-9AC2-40AA-8755-619D91CAB4A1}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="1"/>
+											<Property Name="Min" Type="Real64" Value="-1"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -14,29 +37,375 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
 						</Reference>
-						<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-							<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						<Reference Name="Effect0" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+							<ObjectRef Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
+							<ObjectRef Name="Large_Bright_Chamber1" ID="{0BFA2291-5716-4759-AC24-F59D29E8F2E4}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="VCE_fear2reaper" ID="{C9327572-116B-4438-A0B3-D8E17C7F79C6}">
-							<Language>SFX</Language>
-							<AudioFile>VCE_fear2reaper.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="758218597"/>
-							</MediaIDList>
-						</AudioFileSource>
+						<Sound Name="01-VCE-andrew-001" ID="{93A6EDF3-30A5-4455-9DFA-91D8714EA890}" ShortID="111978554">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="01-VCE-andrew-001" ID="{B11A38D6-D1F8-4A97-847B-A489E4357EE4}">
+									<Language>SFX</Language>
+									<AudioFile>01-VCE-andrew-001.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="107425708"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="01-VCE-andrew-001" ID="{B11A38D6-D1F8-4A97-847B-A489E4357EE4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="02-VCE-andrew2-001" ID="{25D21052-56E0-431B-9366-027778652933}" ShortID="767242014">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="02-VCE-andrew2-001" ID="{932314FB-397F-4898-916A-3984C192CAD2}">
+									<Language>SFX</Language>
+									<AudioFile>02-VCE-andrew2-001.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="231379648"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="02-VCE-andrew2-001" ID="{932314FB-397F-4898-916A-3984C192CAD2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="02-VCE-andrew2-002" ID="{A7116243-448A-4478-9D2A-91342A954442}" ShortID="1007217248">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="02-VCE-andrew2-002" ID="{890ABFFF-61D4-4710-8CB9-47FCFA643984}">
+									<Language>SFX</Language>
+									<AudioFile>02-VCE-andrew2-002.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="680367883"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="02-VCE-andrew2-002" ID="{890ABFFF-61D4-4710-8CB9-47FCFA643984}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="02-VCE-andrew2-003" ID="{23CE6A69-A525-4AA7-9BC8-106C0A64A168}" ShortID="873146397">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="02-VCE-andrew2-003" ID="{0A2379E5-BC90-484A-8331-A396CB88108F}">
+									<Language>SFX</Language>
+									<AudioFile>02-VCE-andrew2-003.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1066935224"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="02-VCE-andrew2-003" ID="{0A2379E5-BC90-484A-8331-A396CB88108F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="02-VCE-andrew2-004" ID="{1F8AB995-F3A0-4B8E-8008-DD50BF777D14}" ShortID="192730912">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="02-VCE-andrew2-004" ID="{997B333B-E894-45F6-848C-7B8936EFBCAB}">
+									<Language>SFX</Language>
+									<AudioFile>02-VCE-andrew2-004.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="660539125"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="02-VCE-andrew2-004" ID="{997B333B-E894-45F6-848C-7B8936EFBCAB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="02-VCE-andrew2-005" ID="{4AF04EA2-D114-4EDC-B182-ECA590CFB440}" ShortID="72657774">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="02-VCE-andrew2-005" ID="{ED0D415F-CEFF-42FE-8EB5-C337FF70C071}">
+									<Language>SFX</Language>
+									<AudioFile>02-VCE-andrew2-005.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="134747153"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="02-VCE-andrew2-005" ID="{ED0D415F-CEFF-42FE-8EB5-C337FF70C071}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="02-VCE-andrew2-006" ID="{122A3DFA-456E-41AF-AB6E-E49ED38AE4B5}" ShortID="221330714">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="02-VCE-andrew2-006" ID="{2B2FCED3-B200-414E-BA37-B8B21262F2B2}">
+									<Language>SFX</Language>
+									<AudioFile>02-VCE-andrew2-006.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="706815037"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="02-VCE-andrew2-006" ID="{2B2FCED3-B200-414E-BA37-B8B21262F2B2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="02-VCE-andrew2-007" ID="{1FF85499-E9B3-41E2-A37C-B8987AD8F868}" ShortID="672979578">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="02-VCE-andrew2-007" ID="{82B5904F-E490-4599-8614-AE3D0F5EE621}">
+									<Language>SFX</Language>
+									<AudioFile>02-VCE-andrew2-007.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="457254032"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="02-VCE-andrew2-007" ID="{82B5904F-E490-4599-8614-AE3D0F5EE621}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="02-VCE-andrew2-008" ID="{DDC68A5B-06A2-43A7-845C-587AE8D5FBF6}" ShortID="363752073">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="02-VCE-andrew2-008" ID="{DC03560C-E18A-494E-B298-881794B6AA4E}">
+									<Language>SFX</Language>
+									<AudioFile>02-VCE-andrew2-008.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="563264003"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="02-VCE-andrew2-008" ID="{DC03560C-E18A-494E-B298-881794B6AA4E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="02-VCE-andrew2-009" ID="{C34420A6-2C4B-44BC-A569-E073C606CE8F}" ShortID="61915059">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="02-VCE-andrew2-009" ID="{A0071AFA-EE91-40CA-A106-FCB3BABD4DA6}">
+									<Language>SFX</Language>
+									<AudioFile>02-VCE-andrew2-009.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="96483055"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="02-VCE-andrew2-009" ID="{A0071AFA-EE91-40CA-A106-FCB3BABD4DA6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="02-VCE-andrew2-010" ID="{51BDC3D4-6BF6-4CAC-B645-2EE77C4B2937}" ShortID="924484214">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="02-VCE-andrew2-010" ID="{7A67FD57-328C-4132-9685-BAA877DA4122}">
+									<Language>SFX</Language>
+									<AudioFile>02-VCE-andrew2-010.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="24626835"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="02-VCE-andrew2-010" ID="{7A67FD57-328C-4132-9685-BAA877DA4122}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="VCE_fear2reaper" ID="{C9327572-116B-4438-A0B3-D8E17C7F79C6}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="VCE_fear3reaper" ID="{B608943E-5712-4539-BCD8-F21B7A3234DE}" ShortID="846977601">
+					<PositioningInfo>
+						<Position Name="" ID="{B256291D-1795-4275-81E8-CB4538DF5F28}">
+							<PropertyList>
+								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+							</PropertyList>
+							<ChildrenList>
+								<Path2D Name="VCE_andrew_soft_Path" ID="{F11FEB51-85A5-4770-8077-21F2AD574CF6}">
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>50</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_andrew_soft_Path_01" ID="{C7F494E2-9865-4583-8A53-7D6398B9AFDD}">
+									<PointList>
+										<Point>
+											<XPos>-42.40506</XPos>
+											<YPos>46.17834</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_andrew_soft_Path_02" ID="{301C0638-0E34-4BE4-8ECE-F80E3969F90A}">
+									<PointList>
+										<Point>
+											<XPos>-64.55696</XPos>
+											<YPos>-0.95541</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_andrew_soft_Path_03" ID="{83E9A397-5256-4D19-9389-FB9362FD58D3}">
+									<PointList>
+										<Point>
+											<XPos>-44.3038</XPos>
+											<YPos>-49.36306</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_andrew_soft_Path_04" ID="{21D250E5-5ACB-44E4-9032-55B0F097B623}">
+									<PointList>
+										<Point>
+											<XPos>0.63291</XPos>
+											<YPos>-70.38217</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_andrew_soft_Path_05" ID="{C70D3A44-750D-45DA-8130-CC24D57E2735}">
+									<PointList>
+										<Point>
+											<XPos>47.46835</XPos>
+											<YPos>-52.54777</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_andrew_soft_Path_06" ID="{35C7B4F2-8E22-453D-8260-C50CBB25506D}">
+									<PointList>
+										<Point>
+											<XPos>73.41772</XPos>
+											<YPos>-1.59236</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_andrew_soft_Path_07" ID="{319D69FD-A13F-4C7C-8A8E-3840CEE0D798}">
+									<PointList>
+										<Point>
+											<XPos>49.36709</XPos>
+											<YPos>46.81529</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
+					</PositioningInfo>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="VCE_wendy_soft" ID="{CF3732B8-913B-44BD-8FF1-84C0EB85CF9F}" ShortID="517709693">
 					<PropertyList>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="3DPosition" Type="int16" Value="1"/>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="InitialDelay" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{3743F26B-BBFA-4EB0-BBF5-E8B4B36DC672}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="1"/>
+											<Property Name="Min" Type="Real64" Value="-1"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>9</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -45,24 +414,1640 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
 						</Reference>
-						<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-							<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						<Reference Name="Effect0" PluginName="Wwise Expander" CompanyID="0" PluginID="109" PluginType="3">
+							<ObjectRef Name="Light_Expander" ID="{C7E71A3B-745F-47B0-8F31-276DD413F83C}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect1" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+							<ObjectRef Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect2" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+							<ObjectRef Name="Small_Tiled_Room1" ID="{41EEE722-3009-4B3F-8820-F414623783E3}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="VCE_fear3reaper" ID="{8B85BA20-2D4A-4906-B4E6-4D0117F1EB6A}">
+						<Sound Name="03-VCE-wendy-001" ID="{163AB6CE-9853-40B6-A095-220F074DB86C}" ShortID="177192033">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="03-VCE-wendy-001" ID="{3A8EC6FB-11FB-4B15-A8D4-05AA20F8E3B7}">
+									<Language>SFX</Language>
+									<AudioFile>03-VCE-wendy-001.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="764093283"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="03-VCE-wendy-001" ID="{3A8EC6FB-11FB-4B15-A8D4-05AA20F8E3B7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="03-VCE-wendy-002" ID="{A95F4875-ACBC-4576-92AD-6756B9F9758B}" ShortID="436719224">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="03-VCE-wendy-002" ID="{6AE9C8F3-9B80-4284-9F59-13700EF81BC2}">
+									<Language>SFX</Language>
+									<AudioFile>03-VCE-wendy-002.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="849798511"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="03-VCE-wendy-002" ID="{6AE9C8F3-9B80-4284-9F59-13700EF81BC2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="03-VCE-wendy-003" ID="{317C8A1A-0552-4190-9567-39851AB67ECC}" ShortID="69129680">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="03-VCE-wendy-003" ID="{ACDD13B8-266D-4999-8DCA-487FCD73ABBC}">
+									<Language>SFX</Language>
+									<AudioFile>03-VCE-wendy-003.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="544331867"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="03-VCE-wendy-003" ID="{ACDD13B8-266D-4999-8DCA-487FCD73ABBC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="03-VCE-wendy-004" ID="{AE27DB8D-BFCC-4534-8CF4-C967AFAB3574}" ShortID="455891699">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="03-VCE-wendy-004" ID="{96D4AEA7-CE2D-4E65-88A1-88058A24708B}">
+									<Language>SFX</Language>
+									<AudioFile>03-VCE-wendy-004.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="387424845"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="03-VCE-wendy-004" ID="{96D4AEA7-CE2D-4E65-88A1-88058A24708B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="04-VCE-wendy2-001" ID="{91D441D8-F3AF-4B73-8C3F-4DCD425823C0}" ShortID="252330630">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="04-VCE-wendy2-001" ID="{F0D319C8-00A7-4BEF-9DF7-52ACC690ADB6}">
+									<Language>SFX</Language>
+									<AudioFile>04-VCE-wendy2-001.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="419709444"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="04-VCE-wendy2-001" ID="{F0D319C8-00A7-4BEF-9DF7-52ACC690ADB6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="04-VCE-wendy2-002" ID="{43E87E83-E4D7-4099-B1EE-F32A843C8B10}" ShortID="551437578">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="04-VCE-wendy2-002" ID="{00E9F22D-A09A-43A5-BAF8-41CB6188949C}">
+									<Language>SFX</Language>
+									<AudioFile>04-VCE-wendy2-002.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="857116671"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="04-VCE-wendy2-002" ID="{00E9F22D-A09A-43A5-BAF8-41CB6188949C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="04-VCE-wendy2-003" ID="{9DE3F8B1-4ABD-410C-BC26-6AB99FF79586}" ShortID="227096922">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="04-VCE-wendy2-003" ID="{B4E4DD4B-FB0B-4153-B07C-9689C24B7C21}">
+									<Language>SFX</Language>
+									<AudioFile>04-VCE-wendy2-003.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="536971781"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="04-VCE-wendy2-003" ID="{B4E4DD4B-FB0B-4153-B07C-9689C24B7C21}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="04-VCE-wendy2-004" ID="{872E2B38-4DE1-44BF-9DAF-93529C565541}" ShortID="895897919">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="04-VCE-wendy2-004" ID="{9CE0BAC4-D5BD-4D9A-B9BE-0AD81EEE5F47}">
+									<Language>SFX</Language>
+									<AudioFile>04-VCE-wendy2-004.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="703035657"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="04-VCE-wendy2-004" ID="{9CE0BAC4-D5BD-4D9A-B9BE-0AD81EEE5F47}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="04-VCE-wendy2-005" ID="{4D7775CB-4DA8-4E17-A2EB-DC0E5DB044A2}" ShortID="748306356">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="04-VCE-wendy2-005" ID="{0A775D6C-1854-4862-B1A2-43577A362A72}">
+									<Language>SFX</Language>
+									<AudioFile>04-VCE-wendy2-005.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1003255258"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="04-VCE-wendy2-005" ID="{0A775D6C-1854-4862-B1A2-43577A362A72}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="04-VCE-wendy2-006" ID="{1A4F6D00-674B-467D-8982-B138C2C6A72B}" ShortID="647872815">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="04-VCE-wendy2-006" ID="{032F8585-2AD9-41EA-A28B-EE3988F11155}">
+									<Language>SFX</Language>
+									<AudioFile>04-VCE-wendy2-006.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="200045509"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="04-VCE-wendy2-006" ID="{032F8585-2AD9-41EA-A28B-EE3988F11155}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{26DDACDD-E1AA-497C-A78F-7D81886F5B8D}">
+							<PropertyList>
+								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+							</PropertyList>
+							<ChildrenList>
+								<Path2D Name="VCE_wendy_soft_Path" ID="{1CD20733-8960-4958-A519-51430AA0F588}">
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>50</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_wendy_soft_Path_01" ID="{D1DA0854-BF1D-41D1-8E53-9DF941C5F4D5}">
+									<PointList>
+										<Point>
+											<XPos>-46.83544</XPos>
+											<YPos>41.71975</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_wendy_soft_Path_02" ID="{98D0FC95-CE44-4B53-A0CE-B0425E4DD157}">
+									<PointList>
+										<Point>
+											<XPos>-65.18987</XPos>
+											<YPos>-0.95541</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_wendy_soft_Path_03" ID="{B18E829C-9D76-4306-AD4E-9D738C6DA5F4}">
+									<PointList>
+										<Point>
+											<XPos>-48.10127</XPos>
+											<YPos>-47.45223</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_wendy_soft_Path_04" ID="{747F2410-1C5A-4CD0-8600-C4B4434C0D16}">
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>-69.10828</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_wendy_soft_Path_05" ID="{A668BB0D-8AF1-422A-A360-09B57352B1F2}">
+									<PointList>
+										<Point>
+											<XPos>49.36709</XPos>
+											<YPos>-53.18471</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_wendy_soft_Path_06" ID="{228EB2AB-C141-4136-9DA1-DA502BECA55F}">
+									<PointList>
+										<Point>
+											<XPos>68.35443</XPos>
+											<YPos>-0.31847</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_wendy_soft_Path_07" ID="{F9A150E1-384B-458F-AE36-2FC9F9B29F46}">
+									<PointList>
+										<Point>
+											<XPos>51.89873</XPos>
+											<YPos>46.81529</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
+					</PositioningInfo>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="VCE_andrew_medium" ID="{9A727273-20E2-449C-A567-E24BBB0B2104}" ShortID="51455095">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="InitialDelay" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{14116737-C701-4C23-95BC-D023E574E2BF}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="1"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Voices" ID="{8E06C3B7-F455-484E-B717-373D83874415}" WorkUnitID="{232DE5AF-50D6-4477-99FE-2F118C3A97C8}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+							<ObjectRef Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect1" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+							<ObjectRef Name="Small_Tiled_Room1" ID="{41EEE722-3009-4B3F-8820-F414623783E3}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="01-VCE-andrew-002" ID="{7F5DF2C0-15C0-484D-8BEC-9862D7E36344}" ShortID="884295106">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="01-VCE-andrew-002" ID="{DCBB60E7-6EDD-4CC6-A445-0D4B123F6A4B}">
+									<Language>SFX</Language>
+									<AudioFile>01-VCE-andrew-002.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="856935496"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="01-VCE-andrew-002" ID="{DCBB60E7-6EDD-4CC6-A445-0D4B123F6A4B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="01-VCE-andrew-003" ID="{BBEC6BBD-4F14-4A6C-BC40-C83CB1E0D419}" ShortID="122437994">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="01-VCE-andrew-003" ID="{A15E4528-2A15-45CE-88CB-121A9D71564D}">
+									<Language>SFX</Language>
+									<AudioFile>01-VCE-andrew-003.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="986127875"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="01-VCE-andrew-003" ID="{A15E4528-2A15-45CE-88CB-121A9D71564D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="01-VCE-andrew-004" ID="{A2BEA2F9-3699-4142-B82A-4676C5755810}" ShortID="293615658">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="01-VCE-andrew-004" ID="{9D388946-D9ED-4F38-9B0E-8561A37D7CB8}">
+									<Language>SFX</Language>
+									<AudioFile>01-VCE-andrew-004.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="822932314"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="01-VCE-andrew-004" ID="{9D388946-D9ED-4F38-9B0E-8561A37D7CB8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="01-VCE-andrew-005" ID="{A497F453-C241-48FD-A310-5B745F9C9A30}" ShortID="424502095">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="01-VCE-andrew-005" ID="{9AC84D8C-32DF-461E-9951-B2F8D9C7FD8D}">
+									<Language>SFX</Language>
+									<AudioFile>01-VCE-andrew-005.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="676074741"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="01-VCE-andrew-005" ID="{9AC84D8C-32DF-461E-9951-B2F8D9C7FD8D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="01-VCE-andrew-006" ID="{B6DCB0C8-0DAF-46CF-B461-E2B74D111915}" ShortID="271370202">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="01-VCE-andrew-006" ID="{05AB33FE-AFA1-4680-BE57-ECD5EF7291AB}">
+									<Language>SFX</Language>
+									<AudioFile>01-VCE-andrew-006.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="139772807"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="01-VCE-andrew-006" ID="{05AB33FE-AFA1-4680-BE57-ECD5EF7291AB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="02-VCE-andrew2-011" ID="{B22F5E19-E8AD-441C-987C-478390F70385}" ShortID="1019662086">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Voices" ID="{8E06C3B7-F455-484E-B717-373D83874415}" WorkUnitID="{232DE5AF-50D6-4477-99FE-2F118C3A97C8}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+									<ObjectRef Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Large_Bright_Chamber1" ID="{0BFA2291-5716-4759-AC24-F59D29E8F2E4}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="02-VCE-andrew2-011" ID="{0546BE7A-ADEE-47DF-9CDB-196BA758CDD8}">
+									<Language>SFX</Language>
+									<AudioFile>02-VCE-andrew2-011.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="154705710"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="02-VCE-andrew2-011" ID="{0546BE7A-ADEE-47DF-9CDB-196BA758CDD8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="02-VCE-andrew2-013" ID="{7EA916F2-BDAB-4BC1-A2AE-D7C66AF55EA7}" ShortID="867278549">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Voices" ID="{8E06C3B7-F455-484E-B717-373D83874415}" WorkUnitID="{232DE5AF-50D6-4477-99FE-2F118C3A97C8}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+									<ObjectRef Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Large_Bright_Chamber1" ID="{0BFA2291-5716-4759-AC24-F59D29E8F2E4}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="02-VCE-andrew2-013" ID="{8B8E666F-16BB-44CA-AD47-6DFD77582C50}">
+									<Language>SFX</Language>
+									<AudioFile>02-VCE-andrew2-013.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="741843556"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="02-VCE-andrew2-013" ID="{8B8E666F-16BB-44CA-AD47-6DFD77582C50}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="02-VCE-andrew2-012" ID="{7CC12983-D341-49A1-91D0-C4346D9F82E0}" ShortID="392558142">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Voices" ID="{8E06C3B7-F455-484E-B717-373D83874415}" WorkUnitID="{232DE5AF-50D6-4477-99FE-2F118C3A97C8}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+									<ObjectRef Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Large_Bright_Chamber1" ID="{0BFA2291-5716-4759-AC24-F59D29E8F2E4}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="02-VCE-andrew2-012" ID="{5BBA1535-4CA2-47A2-8588-E5FB697E0905}">
+									<Language>SFX</Language>
+									<AudioFile>02-VCE-andrew2-012.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="982862148"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="02-VCE-andrew2-012" ID="{5BBA1535-4CA2-47A2-8588-E5FB697E0905}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{FCED0449-E0B5-4C6B-9872-72E6B4393FCC}">
+							<PropertyList>
+								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+							</PropertyList>
+							<ChildrenList>
+								<Path2D Name="VCE_andrew_medium_Path" ID="{6EC5C801-DECE-4AFD-A508-EC967C455900}">
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>50</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_andrew_medium_Path_02" ID="{8B8B0DB6-7344-4D30-B54D-E0EDBD9E5F73}">
+									<PointList>
+										<Point>
+											<XPos>-44.93671</XPos>
+											<YPos>43.63057</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_andrew_medium_Path_03" ID="{8B52916F-EAB4-4F85-A7DE-F865097C1CEF}">
+									<PointList>
+										<Point>
+											<XPos>-62.65823</XPos>
+											<YPos>0.31847</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_andrew_medium_Path_04" ID="{E892EE6E-27FC-44EA-8077-40497F96BA6B}">
+									<PointList>
+										<Point>
+											<XPos>-44.93671</XPos>
+											<YPos>-44.90446</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_andrew_medium_Path_05" ID="{05160CE2-3471-4E30-ABD7-C0D09D9860EA}">
+									<PointList>
+										<Point>
+											<XPos>0.63291</XPos>
+											<YPos>-69.74522</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_andrew_medium_Path_06" ID="{D3C70F46-0D89-4D3C-9F41-2A24BE75C430}">
+									<PointList>
+										<Point>
+											<XPos>51.26582</XPos>
+											<YPos>-51.91083</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_andrew_medium_Path_07" ID="{8DF975A2-C260-4FA1-BD92-5BCEA4188984}">
+									<PointList>
+										<Point>
+											<XPos>73.41772</XPos>
+											<YPos>-0.95541</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_andrew_medium_Path_08" ID="{7BE6C8BE-559C-4651-B3D0-151ABCD391DF}">
+									<PointList>
+										<Point>
+											<XPos>53.16456</XPos>
+											<YPos>55.73248</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
+					</PositioningInfo>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="VCE_andrew_loud" ID="{1BE3D575-F2B8-4300-87E3-0C8A5C4CF018}" ShortID="420218423">
+					<PropertyList>
+						<Property Name="3DPosition" Type="int16" Value="1"/>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="InitialDelay" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{68C7764A-FE9C-4088-8610-58B68BCBC830}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="1"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Voices" ID="{8E06C3B7-F455-484E-B717-373D83874415}" WorkUnitID="{232DE5AF-50D6-4477-99FE-2F118C3A97C8}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+						</Reference>
+						<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+							<ObjectRef Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
+							<ObjectRef Name="Small_Tiled_Room1" ID="{41EEE722-3009-4B3F-8820-F414623783E3}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="01-VCE-andrew-009" ID="{B9AAF152-81EC-479A-BCA0-B238F7F1AB52}" ShortID="812179318">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="01-VCE-andrew-009" ID="{F045C185-43D2-47ED-9B5E-85CD001E51E2}">
+									<Language>SFX</Language>
+									<AudioFile>01-VCE-andrew-009.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="815302368"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="01-VCE-andrew-009" ID="{F045C185-43D2-47ED-9B5E-85CD001E51E2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="01-VCE-andrew-010" ID="{C642429C-AF4D-45A0-B887-F5DA5237ECE4}" ShortID="411828255">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="01-VCE-andrew-010" ID="{EA7E49E0-4836-490B-A616-B2294D5208C4}">
+									<Language>SFX</Language>
+									<AudioFile>01-VCE-andrew-010.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="644424118"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="01-VCE-andrew-010" ID="{EA7E49E0-4836-490B-A616-B2294D5208C4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="01-VCE-andrew-011" ID="{16AC0578-963E-4117-8025-68AA9CDAF5B2}" ShortID="855759897">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="01-VCE-andrew-011" ID="{768AFCFC-C71A-448F-900A-8023B7F8F878}">
+									<Language>SFX</Language>
+									<AudioFile>01-VCE-andrew-011.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="232863171"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="01-VCE-andrew-011" ID="{768AFCFC-C71A-448F-900A-8023B7F8F878}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="01-VCE-andrew-012" ID="{136C49FF-BE67-4965-9EDC-CACE498CC109}" ShortID="914035465">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="01-VCE-andrew-012" ID="{0AAEF728-DA1D-461E-8B80-FE87920BDADA}">
+									<Language>SFX</Language>
+									<AudioFile>01-VCE-andrew-012.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="655384607"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="01-VCE-andrew-012" ID="{0AAEF728-DA1D-461E-8B80-FE87920BDADA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="01-VCE-andrew-013" ID="{B154CBC4-EB56-4D03-B484-A2996FB3D86E}" ShortID="829093236">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="01-VCE-andrew-013" ID="{677ADA88-9847-4E3E-81E5-8AA7E8222AEF}">
+									<Language>SFX</Language>
+									<AudioFile>01-VCE-andrew-013.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="840729074"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="01-VCE-andrew-013" ID="{677ADA88-9847-4E3E-81E5-8AA7E8222AEF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="01-VCE-andrew-007" ID="{6D7E60D5-C298-4245-AA2F-AA2B6009D0C4}" ShortID="928078609">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Voices" ID="{8E06C3B7-F455-484E-B717-373D83874415}" WorkUnitID="{232DE5AF-50D6-4477-99FE-2F118C3A97C8}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+									<ObjectRef Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+									<ObjectRef Name="Small_Tiled_Room1" ID="{41EEE722-3009-4B3F-8820-F414623783E3}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="01-VCE-andrew-007" ID="{75A72D07-8E1B-4DEB-A02C-E4F517CA51FB}">
+									<Language>SFX</Language>
+									<AudioFile>01-VCE-andrew-007.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="77339932"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="01-VCE-andrew-007" ID="{75A72D07-8E1B-4DEB-A02C-E4F517CA51FB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="01-VCE-andrew-008" ID="{C0E2077B-AB1A-431C-9018-E5C17D1A63BB}" ShortID="922371337">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Voices" ID="{8E06C3B7-F455-484E-B717-373D83874415}" WorkUnitID="{232DE5AF-50D6-4477-99FE-2F118C3A97C8}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+									<ObjectRef Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+									<ObjectRef Name="Small_Tiled_Room1" ID="{41EEE722-3009-4B3F-8820-F414623783E3}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="01-VCE-andrew-008" ID="{BEF513D3-5B48-4521-B2F6-2EFB09D6F04E}">
+									<Language>SFX</Language>
+									<AudioFile>01-VCE-andrew-008.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="235798746"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="01-VCE-andrew-008" ID="{BEF513D3-5B48-4521-B2F6-2EFB09D6F04E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{D2A085DE-615B-4B43-A4C5-2B63D85F8033}">
+							<PropertyList>
+								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+							</PropertyList>
+							<ChildrenList>
+								<Path2D Name="VCE_andrew_loud_Path" ID="{7BB3EF28-E1C4-462C-960A-67AFC9A030C0}">
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>50</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_andrew_loud_Path_01" ID="{D70C40CE-8447-41F6-98A0-CF55A83525C9}">
+									<PointList>
+										<Point>
+											<XPos>61.39241</XPos>
+											<YPos>50</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_andrew_loud_Path_02" ID="{71E4A90B-A913-4736-A34E-EA299A333234}">
+									<PointList>
+										<Point>
+											<XPos>-66.45569</XPos>
+											<YPos>54.4586</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_andrew_loud_Path_03" ID="{FC8D64DF-66F5-4370-92B9-CB308168D8F8}">
+									<PointList>
+										<Point>
+											<XPos>61.3924</XPos>
+											<YPos>-62.10192</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_andrew_loud_Path_04" ID="{4782B881-0B3F-4F49-9F86-4F2556F061BC}">
+									<PointList>
+										<Point>
+											<XPos>-54.43038</XPos>
+											<YPos>-58.9172</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_andrew_loud_Path_05" ID="{7F880F39-2B02-41D4-9FDB-46EAEB81F7C0}">
+									<PointList>
+										<Point>
+											<XPos>-0.63291</XPos>
+											<YPos>-79.29936</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_andrew_loud_Path_06" ID="{55371129-C767-4831-8922-61BA73AD3C7B}">
+									<PointList>
+										<Point>
+											<XPos>-75.94936</XPos>
+											<YPos>-0.95541</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_andrew_loud_Path_07" ID="{8F8775B9-13B8-44BF-86C8-565308D9F5D2}">
+									<PointList>
+										<Point>
+											<XPos>70.25316</XPos>
+											<YPos>-0.31847</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
+					</PositioningInfo>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="VCE_wendy_medium" ID="{A8170E86-2D49-4543-8581-FBA0CB2433F8}" ShortID="399460539">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="InitialDelay" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{2B5DB962-3931-40BC-ADF3-DCDBF366BDD1}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="1"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Voices" ID="{8E06C3B7-F455-484E-B717-373D83874415}" WorkUnitID="{232DE5AF-50D6-4477-99FE-2F118C3A97C8}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Expander" CompanyID="0" PluginID="109" PluginType="3">
+							<ObjectRef Name="Light_Expander" ID="{C7E71A3B-745F-47B0-8F31-276DD413F83C}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect1" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+							<ObjectRef Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect2" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+							<ObjectRef Name="Small_Tiled_Room1" ID="{41EEE722-3009-4B3F-8820-F414623783E3}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="03-VCE-wendy-005" ID="{98000C2C-7A32-4A9F-9355-B59AA22E985C}" ShortID="402411594">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="03-VCE-wendy-005" ID="{A60DFF0C-3802-4993-AF75-E9319C983CE5}">
+									<Language>SFX</Language>
+									<AudioFile>03-VCE-wendy-005.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="28958362"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="03-VCE-wendy-005" ID="{A60DFF0C-3802-4993-AF75-E9319C983CE5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="03-VCE-wendy-006" ID="{03FD3CC1-9375-4DB7-A40C-6DB5A83C71D5}" ShortID="563838469">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="03-VCE-wendy-006" ID="{54CF0966-E56B-4F74-B6A5-594C1D03882C}">
+									<Language>SFX</Language>
+									<AudioFile>03-VCE-wendy-006.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="852191871"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="03-VCE-wendy-006" ID="{54CF0966-E56B-4F74-B6A5-594C1D03882C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="03-VCE-wendy-007" ID="{72E6380D-3E69-41FE-81D5-59C02AC67C02}" ShortID="294113593">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="03-VCE-wendy-007" ID="{2D201170-4936-44BE-BC91-613AEC4135FF}">
+									<Language>SFX</Language>
+									<AudioFile>03-VCE-wendy-007.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="730418419"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="03-VCE-wendy-007" ID="{2D201170-4936-44BE-BC91-613AEC4135FF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="03-VCE-wendy-008" ID="{065D60A2-3BD8-4838-9EB3-5473D74D000D}" ShortID="900746932">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="03-VCE-wendy-008" ID="{88BE743D-D2EF-46A6-82A3-8368ABB08225}">
+									<Language>SFX</Language>
+									<AudioFile>03-VCE-wendy-008.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="607639837"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="03-VCE-wendy-008" ID="{88BE743D-D2EF-46A6-82A3-8368ABB08225}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="04-VCE-wendy2-007" ID="{D651B397-7EFA-49BB-A0E4-C918BA339788}" ShortID="262442623">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="04-VCE-wendy2-007" ID="{634FEB78-EF5D-4E96-A523-955B4EBF17C1}">
+									<Language>SFX</Language>
+									<AudioFile>04-VCE-wendy2-007.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="185904914"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="04-VCE-wendy2-007" ID="{634FEB78-EF5D-4E96-A523-955B4EBF17C1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="04-VCE-wendy2-008" ID="{3E6B0557-27E2-480B-8EE4-607525580421}" ShortID="713708331">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="04-VCE-wendy2-008" ID="{FBFA547C-1690-4B89-AA16-B7A6527BD8FD}">
+									<Language>SFX</Language>
+									<AudioFile>04-VCE-wendy2-008.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="739461253"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="04-VCE-wendy2-008" ID="{FBFA547C-1690-4B89-AA16-B7A6527BD8FD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="04-VCE-wendy2-009" ID="{0815E556-1813-476C-A947-295A7A270C14}" ShortID="816152872">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="04-VCE-wendy2-009" ID="{D3C73C82-C86D-4C46-94F6-0CC82E6F7954}">
+									<Language>SFX</Language>
+									<AudioFile>04-VCE-wendy2-009.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="845315985"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="04-VCE-wendy2-009" ID="{D3C73C82-C86D-4C46-94F6-0CC82E6F7954}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{BFC13551-0AA5-424C-99A5-2CC30AA1CA66}">
+							<PropertyList>
+								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+							</PropertyList>
+							<ChildrenList>
+								<Path2D Name="VCE_wendy_medium_Path" ID="{B0629737-DC68-48FF-B96E-70457324EC25}">
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>50</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_wendy_medium_Path_01" ID="{E7DE133B-9E4C-4CD2-B186-486FAFF4A705}">
+									<PointList>
+										<Point>
+											<XPos>-44.3038</XPos>
+											<YPos>48.08917</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_wendy_medium_Path_02" ID="{44954414-DDAB-46FA-B9C0-9CB154FE9AC5}">
+									<PointList>
+										<Point>
+											<XPos>-62.02532</XPos>
+											<YPos>0.31847</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_wendy_medium_Path_03" ID="{89063494-3FCE-40AD-A3BC-DA1336FD04A4}">
+									<PointList>
+										<Point>
+											<XPos>-44.93671</XPos>
+											<YPos>-43.63057</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_wendy_medium_Path_04" ID="{CD0DDD6A-58BC-4095-92C0-B7A77D2302AE}">
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>-64.64968</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_wendy_medium_Path_05" ID="{C2135405-99B7-4413-97D6-987FA7A0CC82}">
+									<PointList>
+										<Point>
+											<XPos>50</XPos>
+											<YPos>-57.64331</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_wendy_medium_Path_06" ID="{BB521CAD-55C5-44B2-908A-BF2DD6C02F4A}">
+									<PointList>
+										<Point>
+											<XPos>66.4557</XPos>
+											<YPos>-0.95541</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_wendy_medium_Path_07" ID="{AE9AF5C0-A0E7-4D31-A4C4-34CCAF00C95B}">
+									<PointList>
+										<Point>
+											<XPos>51.89873</XPos>
+											<YPos>50</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
+					</PositioningInfo>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="VCE_wendy_loud" ID="{CB35ACE3-E879-4E6F-908E-B0A4B7784D5F}" ShortID="571295545">
+					<PropertyList>
+						<Property Name="3DPosition" Type="int16" Value="1"/>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="InitialDelay" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{BBCB5D22-0602-4A06-AAE5-9FE45F42AC83}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="1"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Voices" ID="{8E06C3B7-F455-484E-B717-373D83874415}" WorkUnitID="{232DE5AF-50D6-4477-99FE-2F118C3A97C8}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Expander" CompanyID="0" PluginID="109" PluginType="3">
+							<ObjectRef Name="Light_Expander" ID="{C7E71A3B-745F-47B0-8F31-276DD413F83C}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect1" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+							<ObjectRef Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect2" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+							<ObjectRef Name="Small_Tiled_Room1" ID="{41EEE722-3009-4B3F-8820-F414623783E3}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="03-VCE-wendy-009" ID="{E92C861F-3AD2-4098-AA20-0D2DE947F50F}" ShortID="444657928">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="03-VCE-wendy-009" ID="{11837ECC-F3FD-4937-88CA-0B3580C9D10B}">
+									<Language>SFX</Language>
+									<AudioFile>03-VCE-wendy-009.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="816804458"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="03-VCE-wendy-009" ID="{11837ECC-F3FD-4937-88CA-0B3580C9D10B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="03-VCE-wendy-010" ID="{80392432-246E-4C6C-86C6-1DAF4BD27C41}" ShortID="416581437">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="03-VCE-wendy-010" ID="{C5E3C6CE-1BF5-4129-8B31-1CEBD1D22B89}">
+									<Language>SFX</Language>
+									<AudioFile>03-VCE-wendy-010.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="711302397"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="03-VCE-wendy-010" ID="{C5E3C6CE-1BF5-4129-8B31-1CEBD1D22B89}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="03-VCE-wendy-011" ID="{98ED9C38-A3FB-4480-AE7E-6560D21BF9E7}" ShortID="478188224">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="03-VCE-wendy-011" ID="{91C3B6FF-84D2-4D6C-9629-0C3179999503}">
+									<Language>SFX</Language>
+									<AudioFile>03-VCE-wendy-011.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="167012258"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="03-VCE-wendy-011" ID="{91C3B6FF-84D2-4D6C-9629-0C3179999503}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="03-VCE-wendy-012" ID="{F0751DA9-B297-417F-B259-0F6682D18F32}" ShortID="843323097">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="03-VCE-wendy-012" ID="{471B9986-3FEF-450A-B54C-10B44730D59C}">
+									<Language>SFX</Language>
+									<AudioFile>03-VCE-wendy-012.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="862097904"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="03-VCE-wendy-012" ID="{471B9986-3FEF-450A-B54C-10B44730D59C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="04-VCE-wendy2-010" ID="{843D0354-28FE-4DAF-AB4C-E2210510B930}" ShortID="974302476">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="04-VCE-wendy2-010" ID="{C6E51DB2-2C73-4871-A242-02A91D150A5B}">
+									<Language>SFX</Language>
+									<AudioFile>04-VCE-wendy2-010.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="659945467"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="04-VCE-wendy2-010" ID="{C6E51DB2-2C73-4871-A242-02A91D150A5B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="04-VCE-wendy2-011" ID="{3B027F95-9694-4B8A-B865-301CCA36AE31}" ShortID="984985358">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="04-VCE-wendy2-011" ID="{BA6A3E9D-1652-4BE8-8241-5FAAA9B162F3}">
+									<Language>SFX</Language>
+									<AudioFile>04-VCE-wendy2-011.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="380395122"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="04-VCE-wendy2-011" ID="{BA6A3E9D-1652-4BE8-8241-5FAAA9B162F3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="04-VCE-wendy2-012" ID="{872F5585-E77E-4E73-8360-8B3FDACD32C8}" ShortID="26361844">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="04-VCE-wendy2-012" ID="{2B769319-71FE-4397-85A7-A5AF21ABA695}">
+									<Language>SFX</Language>
+									<AudioFile>04-VCE-wendy2-012.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="916356619"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="04-VCE-wendy2-012" ID="{2B769319-71FE-4397-85A7-A5AF21ABA695}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="04-VCE-wendy2-013" ID="{7203A919-E6DE-4C96-9B7B-0A66AFD616C5}" ShortID="412299265">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="04-VCE-wendy2-013" ID="{280F3258-4EFD-4793-B24E-2786883926BB}">
+									<Language>SFX</Language>
+									<AudioFile>04-VCE-wendy2-013.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="925968249"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="04-VCE-wendy2-013" ID="{280F3258-4EFD-4793-B24E-2786883926BB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="04-VCE-wendy2-014" ID="{F08CFD54-B611-43B8-B624-9A3BB2259FB4}" ShortID="769841597">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="04-VCE-wendy2-014" ID="{22153268-0151-441E-9224-5AE423855E57}">
+									<Language>SFX</Language>
+									<AudioFile>04-VCE-wendy2-014.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="880792263"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="04-VCE-wendy2-014" ID="{22153268-0151-441E-9224-5AE423855E57}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{8E48F87E-B239-49BD-B67C-34408F44B80C}">
+							<PropertyList>
+								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+							</PropertyList>
+							<ChildrenList>
+								<Path2D Name="VCE_wendy_loud_Path" ID="{65070729-D14D-4690-9F88-A26FBC40051B}">
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>51.91083</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_wendy_loud_Path_01" ID="{F5E617BA-0D21-4BCD-A048-4DF0801E09F5}">
+									<PointList>
+										<Point>
+											<XPos>-49.36709</XPos>
+											<YPos>45.5414</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_wendy_loud_Path_02" ID="{2D892785-8FE9-4AA3-A759-FA2BE0626BC1}">
+									<PointList>
+										<Point>
+											<XPos>-60.12658</XPos>
+											<YPos>-0.31847</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_wendy_loud_Path_03" ID="{BB8BAEB8-E0E5-47BF-83A7-47703C79850E}">
+									<PointList>
+										<Point>
+											<XPos>-46.83544</XPos>
+											<YPos>-44.90446</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_wendy_loud_Path_04" ID="{5DC96A75-5CE2-4258-B415-06331680A9EA}">
+									<PointList>
+										<Point>
+											<XPos>1.26582</XPos>
+											<YPos>-66.56051</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_wendy_loud_Path_05" ID="{EBE5790F-8747-40E6-846C-3597D8D9A4ED}">
+									<PointList>
+										<Point>
+											<XPos>50</XPos>
+											<YPos>-55.09554</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_wendy_loud_Path_06" ID="{91B83054-D9CC-49D9-8032-C93256E8FE03}">
+									<PointList>
+										<Point>
+											<XPos>70.88608</XPos>
+											<YPos>-0.95541</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="VCE_wendy_loud_Path_07" ID="{E16EFC19-E174-4390-B1C4-31521DFFDFD4}">
+									<PointList>
+										<Point>
+											<XPos>54.43038</XPos>
+											<YPos>44.26752</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
+					</PositioningInfo>
+				</RandomSequenceContainer>
+				<Sound Name="05-VCE_scream" ID="{13926605-1A5D-4380-9881-AB83F6E5E07A}" ShortID="1057348973">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Expander" CompanyID="0" PluginID="109" PluginType="3">
+							<ObjectRef Name="Light_Expander" ID="{C7E71A3B-745F-47B0-8F31-276DD413F83C}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
+							<ObjectRef Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect2" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+							<ObjectRef Name="Room_Large" ID="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect3" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+							<ObjectRef Name="New_Wwise_Time_Stretch" ID="{0AA5AEEA-DD17-423B-B294-666195948F3E}" WorkUnitID="{091F49A3-B956-4CD4-9C17-AD4881D5B4AF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="05-VCE_scream" ID="{EAA6CE56-0309-4921-832F-60B2B9979730}">
 							<Language>SFX</Language>
-							<AudioFile>VCE_fear3reaper.wav</AudioFile>
+							<AudioFile>05-VCE_scream.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="66252184"/>
+								<MediaID ID="871711540"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="VCE_fear3reaper" ID="{8B85BA20-2D4A-4906-B4E6-4D0117F1EB6A}" Platform="Linked"/>
+						<ActiveSource Name="05-VCE_scream" ID="{EAA6CE56-0309-4921-832F-60B2B9979730}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

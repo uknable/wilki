@@ -1,42 +1,102 @@
 Event	ID	Name			Wwise Object Path	Notes
-	118243955	card_reject			\Default Work Unit\card_reject	
-	128625444	door_close			\Default Work Unit\door_close	
+	118243955	card_reject			\Default Work Unit\SFX\card_reject	
+	128625444	door_close			\Default Work Unit\SFX\door_close	
+	176915315	VCE_wendy_medium			\Default Work Unit\Voice\VCE_wendy_medium	
 	353737842	AMB_aircon			\Default Work Unit\Ambient\AMB_aircon	
-	393728557	fear_male			\Default Work Unit\Voice\fear_male	
-	492663108	AMB_bathroom			\Default Work Unit\Ambient\AMB_bathroom	
-	535830432	door_open			\Default Work Unit\door_open	
-	1086717530	fear_female			\Default Work Unit\Voice\fear_female	
-	1546711062	card_accept			\Default Work Unit\card_accept	
+	535830432	door_open			\Default Work Unit\SFX\door_open	
+	584853266	VCE_wendy_loud			\Default Work Unit\Voice\VCE_wendy_loud	
+	1433205722	VCE_wendy_soft			\Default Work Unit\Voice\VCE_wendy_soft	
+	1442362601	AMB_traffic			\Default Work Unit\Ambient\AMB_traffic	
+	1546711062	card_accept			\Default Work Unit\SFX\card_accept	
+	1615484651	VCE_andrew_medium			\Default Work Unit\Voice\VCE_andrew_medium	
 	1720944578	AMB_beep			\Default Work Unit\Ambient\AMB_beep	
 	1841879696	AMB_darkwind			\Default Work Unit\Ambient\AMB_darkwind	
-	1866025847	footstep			\Default Work Unit\footstep	
-	3302041772	AMB_rain			\Default Work Unit\Ambient\AMB_rain	
-	4090069850	door_handle			\Default Work Unit\door_handle	
+	1866025847	footstep			\Default Work Unit\SFX\footstep	
+	2690609018	VCE_andrew_loud			\Default Work Unit\Voice\VCE_andrew_loud	
+	3312710034	VCE_andrew_soft			\Default Work Unit\Voice\VCE_andrew_soft	
+	4090069850	door_handle			\Default Work Unit\SFX\door_handle	
+	4110157181	AMB_machine			\Default Work Unit\Ambient\AMB_machine	
+	4173527747	VCE_scream			\Default Work Unit\Voice\VCE_scream	
 
 Effect plug-ins	ID	Name	Type				Notes
+	287224143	New_Wwise_Time_Stretch	Wwise Time Stretch			
+	602546716	Room_Large	Wwise RoomVerb			
+	992902880	Small_Tiled_Room1	Wwise Matrix Reverb			
 	1252796875	Light_Expander	Wwise Expander			
-	2995775460	Room_Small	Wwise RoomVerb			
+	1588715066	Echoes_Linear	Wwise Delay			
+	3673681183	Large_Bright_Chamber1	Wwise Matrix Reverb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	18001423	AMB_aircon	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\AMB_aircon_D79FB2B7.wem		\Actor-Mixer Hierarchy\Ambience\AMB_aircon		5207104
-	66252184	VCE_fear3reaper	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\VCE_fear3reaper_D79FB2B7.wem		\Actor-Mixer Hierarchy\Voice\VCE_fear3reaper		3266160
+	24626835	02-VCE-andrew2-010	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\02-VCE-andrew2-010_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_soft\02-VCE-andrew2-010		492220
+	28958362	03-VCE-wendy-005	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\03-VCE-wendy-005_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_medium\03-VCE-wendy-005		518680
+	57268841	AMB-traffic	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\AMB-traffic_D79FB2B7.wem		\Actor-Mixer Hierarchy\Ambience\AMB-traffic		3792664
+	77339932	01-VCE-andrew-007	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\01-VCE-andrew-007_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_loud\01-VCE-andrew-007		361684
+	96483055	02-VCE-andrew2-009	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\02-VCE-andrew2-009_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_soft\02-VCE-andrew2-009		492220
+	107425708	01-VCE-andrew-001	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\01-VCE-andrew-001_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_soft\01-VCE-andrew-001		361684
+	134747153	02-VCE-andrew2-005	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\02-VCE-andrew2-005_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_soft\02-VCE-andrew2-005		492220
+	139772807	01-VCE-andrew-006	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\01-VCE-andrew-006_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_medium\01-VCE-andrew-006		361684
+	154705710	02-VCE-andrew2-011	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\02-VCE-andrew2-011_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_medium\02-VCE-andrew2-011		492220
+	167012258	03-VCE-wendy-011	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\03-VCE-wendy-011_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_loud\03-VCE-wendy-011		518680
+	185904914	04-VCE-wendy2-007	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\04-VCE-wendy2-007_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_medium\04-VCE-wendy2-007		529264
+	200045509	04-VCE-wendy2-006	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\04-VCE-wendy2-006_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_soft\04-VCE-wendy2-006		529264
 	207088586	SFX_card-reject	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\SFX_card-reject_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SFX_card-reject		667208
 	227142155	SFX_footsteps-2	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\SFX_footsteps-2_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Footstep\SFX_footsteps-2		135760
+	231379648	02-VCE-andrew2-001	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\02-VCE-andrew2-001_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_soft\02-VCE-andrew2-001		492220
+	232863171	01-VCE-andrew-011	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\01-VCE-andrew-011_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_loud\01-VCE-andrew-011		361684
+	235798746	01-VCE-andrew-008	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\01-VCE-andrew-008_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_loud\01-VCE-andrew-008		361684
+	298359704	AMB-beep	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\AMB-beep_D79FB2B7.wem		\Actor-Mixer Hierarchy\Ambience\AMB-beep		4498264
 	311573354	SFX_door_handle	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\SFX_door_handle_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SFX_door_handle		406352
 	325492471	SFX_footsteps-3	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\SFX_footsteps-3_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Footstep\SFX_footsteps-3		187228
+	331335489	AMB-darkwind-consolidated	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\AMB-darkwind-consolidated_D79FB2B7.wem		\Actor-Mixer Hierarchy\Ambience\AMB-darkwind-consolidated		3792664
 	375134056	SFX_door-close	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\SFX_door-close_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SFX_door-close		475280
+	380395122	04-VCE-wendy2-011	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\04-VCE-wendy2-011_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_loud\04-VCE-wendy2-011		529264
 	380948175	SFX_footsteps-6	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\SFX_footsteps-6_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Footstep\SFX_footsteps-6		262092
-	503323424	AMB_bathroom	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\AMB_bathroom_10C4C929.wem		\Actor-Mixer Hierarchy\Ambience\AMB_bathroom		1410596
+	387424845	03-VCE-wendy-004	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\03-VCE-wendy-004_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_soft\03-VCE-wendy-004		518680
+	419709444	04-VCE-wendy2-001	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\04-VCE-wendy2-001_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_soft\04-VCE-wendy2-001		529264
+	457254032	02-VCE-andrew2-007	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\02-VCE-andrew2-007_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_soft\02-VCE-andrew2-007		492220
 	527199035	SFX_footsteps-5	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\SFX_footsteps-5_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Footstep\SFX_footsteps-5		203608
+	536971781	04-VCE-wendy2-003	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\04-VCE-wendy2-003_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_soft\04-VCE-wendy2-003		529264
+	544331867	03-VCE-wendy-003	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\03-VCE-wendy-003_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_soft\03-VCE-wendy-003		518680
+	563264003	02-VCE-andrew2-008	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\02-VCE-andrew2-008_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_soft\02-VCE-andrew2-008		492220
+	607639837	03-VCE-wendy-008	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\03-VCE-wendy-008_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_medium\03-VCE-wendy-008		518680
 	637399422	SFX_footsteps-8	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\SFX_footsteps-8_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Footstep\SFX_footsteps-8		187232
+	644424118	01-VCE-andrew-010	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\01-VCE-andrew-010_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_loud\01-VCE-andrew-010		361684
 	645325197	SFX_door_open	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\SFX_door_open_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SFX_door_open		387832
-	661570949	AMB_reader-beep	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\AMB_reader-beep_10C4C929.wem		\Actor-Mixer Hierarchy\Ambience\AMB_reader-beep		3704896
+	654012214	AMB-aircon	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\AMB-aircon_D79FB2B7.wem		\Actor-Mixer Hierarchy\Ambience\AMB-aircon		2028664
+	655384607	01-VCE-andrew-012	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\01-VCE-andrew-012_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_loud\01-VCE-andrew-012		361684
+	659945467	04-VCE-wendy2-010	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\04-VCE-wendy2-010_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_loud\04-VCE-wendy2-010		529264
+	660539125	02-VCE-andrew2-004	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\02-VCE-andrew2-004_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_soft\02-VCE-andrew2-004		492220
+	676074741	01-VCE-andrew-005	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\01-VCE-andrew-005_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_medium\01-VCE-andrew-005		361684
+	680367883	02-VCE-andrew2-002	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\02-VCE-andrew2-002_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_soft\02-VCE-andrew2-002		492220
 	684162146	SFX_footsteps-10	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\SFX_footsteps-10_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Footstep\SFX_footsteps-10		205948
-	705528332	VCE_rainreaper	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\VCE_rainreaper_D79FB2B7.wem		\Actor-Mixer Hierarchy\Ambience\VCE_rainreaper		3266160
+	703035657	04-VCE-wendy2-004	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\04-VCE-wendy2-004_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_soft\04-VCE-wendy2-004		529264
+	706815037	02-VCE-andrew2-006	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\02-VCE-andrew2-006_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_soft\02-VCE-andrew2-006		492220
+	711302397	03-VCE-wendy-010	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\03-VCE-wendy-010_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_loud\03-VCE-wendy-010		518680
+	730418419	03-VCE-wendy-007	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\03-VCE-wendy-007_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_medium\03-VCE-wendy-007		518680
+	739461253	04-VCE-wendy2-008	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\04-VCE-wendy2-008_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_medium\04-VCE-wendy2-008		529264
+	741843556	02-VCE-andrew2-013	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\02-VCE-andrew2-013_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_medium\02-VCE-andrew2-013		492220
 	748466399	SFX_card-accept	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\SFX_card-accept_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\SFX_card-accept		298692
-	758218597	VCE_fear2reaper	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\VCE_fear2reaper_D79FB2B7.wem		\Actor-Mixer Hierarchy\Voice\VCE_fear2reaper		3266160
+	764093283	03-VCE-wendy-001	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\03-VCE-wendy-001_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_soft\03-VCE-wendy-001		518680
+	815302368	01-VCE-andrew-009	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\01-VCE-andrew-009_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_loud\01-VCE-andrew-009		361684
+	816804458	03-VCE-wendy-009	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\03-VCE-wendy-009_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_loud\03-VCE-wendy-009		518680
+	822932314	01-VCE-andrew-004	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\01-VCE-andrew-004_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_medium\01-VCE-andrew-004		361684
+	840729074	01-VCE-andrew-013	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\01-VCE-andrew-013_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_loud\01-VCE-andrew-013		361684
+	845315985	04-VCE-wendy2-009	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\04-VCE-wendy2-009_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_medium\04-VCE-wendy2-009		529264
+	849798511	03-VCE-wendy-002	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\03-VCE-wendy-002_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_soft\03-VCE-wendy-002		518680
+	852191871	03-VCE-wendy-006	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\03-VCE-wendy-006_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_medium\03-VCE-wendy-006		518680
+	856935496	01-VCE-andrew-002	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\01-VCE-andrew-002_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_medium\01-VCE-andrew-002		361684
+	857116671	04-VCE-wendy2-002	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\04-VCE-wendy2-002_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_soft\04-VCE-wendy2-002		529264
 	858127442	SFX_footsteps-7	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\SFX_footsteps-7_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Footstep\SFX_footsteps-7		177872
+	862097904	03-VCE-wendy-012	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\03-VCE-wendy-012_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_loud\03-VCE-wendy-012		518680
+	871711540	05-VCE_scream	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\05-VCE_scream_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\05-VCE_scream		738756
+	880792263	04-VCE-wendy2-014	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\04-VCE-wendy2-014_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_loud\04-VCE-wendy2-014		529264
 	887690033	SFX_footsteps-4	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\SFX_footsteps-4_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Footstep\SFX_footsteps-4		203608
+	916356619	04-VCE-wendy2-012	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\04-VCE-wendy2-012_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_loud\04-VCE-wendy2-012		529264
+	925968249	04-VCE-wendy2-013	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\04-VCE-wendy2-013_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_loud\04-VCE-wendy2-013		529264
 	927632515	SFX_footsteps-9	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\SFX_footsteps-9_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Footstep\SFX_footsteps-9		203608
-	970699831	AMB_darkwind	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\AMB_darkwind_D79FB2B7.wem		\Actor-Mixer Hierarchy\Ambience\AMB_darkwind		3266160
+	982862148	02-VCE-andrew2-012	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\02-VCE-andrew2-012_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_medium\02-VCE-andrew2-012		492220
+	986127875	01-VCE-andrew-003	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\01-VCE-andrew-003_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_medium\01-VCE-andrew-003		361684
+	1003255258	04-VCE-wendy2-005	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\04-VCE-wendy2-005_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_wendy_soft\04-VCE-wendy2-005		529264
+	1063516820	AMB-machine	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\AMB-machine_D79FB2B7.wem		\Actor-Mixer Hierarchy\Ambience\AMB-machine		3175264
+	1066935224	02-VCE-andrew2-003	C:\Users\me\Documents\wilki\wilki_WwiseProject\.cache\Mac\SFX\02-VCE-andrew2-003_10C4C929.wem		\Actor-Mixer Hierarchy\Voice\VCE_andrew_soft\02-VCE-andrew2-003		492220
 

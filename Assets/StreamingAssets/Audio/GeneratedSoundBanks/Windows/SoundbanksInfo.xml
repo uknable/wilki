@@ -11,57 +11,22 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="938405515">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3795705330">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1661994096" Language="SFX" Hash="4131915290">
+		<SoundBank Id="1661994096" Language="SFX" Hash="2242074110">
 			<ObjectPath>\SoundBanks\Default Work Unit\soundbank</ObjectPath>
 			<ShortName>soundbank</ShortName>
 			<Path>soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="353737842" Name="AMB_aircon" ObjectPath="\Events\Default Work Unit\Ambient\AMB_aircon" MaxAttenuation="20.000000" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="18001423" Language="SFX">
-							<ShortName>AMB_aircon.wav</ShortName>
-							<Path>SFX\AMB_aircon_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="492663108" Name="AMB_bathroom" ObjectPath="\Events\Default Work Unit\Ambient\AMB_bathroom" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="7.996213" DurationMax="7.996213">
-					<IncludedMemoryFiles>
-						<File Id="503323424" Language="SFX">
-							<ShortName>AMB_bathroom.wav</ShortName>
-							<Path>SFX\AMB_bathroom_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="1720944578" Name="AMB_beep" ObjectPath="\Events\Default Work Unit\Ambient\AMB_beep" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="21.002449" DurationMax="21.002449">
-					<IncludedMemoryFiles>
-						<File Id="661570949" Language="SFX">
-							<ShortName>AMB_reader-beep.wav</ShortName>
-							<Path>SFX\AMB_reader-beep_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="1841879696" Name="AMB_darkwind" ObjectPath="\Events\Default Work Unit\Ambient\AMB_darkwind" MaxAttenuation="15.000000" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="970699831" Language="SFX">
-							<ShortName>AMB_darkwind.wav</ShortName>
-							<Path>SFX\AMB_darkwind_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="3302041772" Name="AMB_rain" ObjectPath="\Events\Default Work Unit\Ambient\AMB_rain" MaxAttenuation="15.000000" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="705528332" Language="SFX">
-							<ShortName>VCE_rainreaper.wav</ShortName>
-							<Path>SFX\VCE_rainreaper_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="1546711062" Name="card_accept" ObjectPath="\Events\Default Work Unit\card_accept" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="1.692902" DurationMax="1.692902">
+				<Event Id="353737842" Name="AMB_aircon" ObjectPath="\Events\Default Work Unit\Ambient\AMB_aircon" MaxAttenuation="10.000000" DurationType="Infinite"/>
+				<Event Id="1720944578" Name="AMB_beep" ObjectPath="\Events\Default Work Unit\Ambient\AMB_beep" MaxAttenuation="10.000000" DurationType="Infinite"/>
+				<Event Id="1841879696" Name="AMB_darkwind" ObjectPath="\Events\Default Work Unit\Ambient\AMB_darkwind" MaxAttenuation="7.000000" DurationType="Infinite"/>
+				<Event Id="4110157181" Name="AMB_machine" ObjectPath="\Events\Default Work Unit\Ambient\AMB_machine" MaxAttenuation="7.000000" DurationType="Infinite"/>
+				<Event Id="1442362601" Name="AMB_traffic" ObjectPath="\Events\Default Work Unit\Ambient\AMB_traffic" MaxAttenuation="7.000000" DurationType="Infinite"/>
+				<Event Id="1546711062" Name="card_accept" ObjectPath="\Events\Default Work Unit\SFX\card_accept" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="1.692902" DurationMax="1.692902">
 					<IncludedMemoryFiles>
 						<File Id="748466399" Language="SFX">
 							<ShortName>SFX_card-accept.wav</ShortName>
@@ -69,7 +34,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="118243955" Name="card_reject" ObjectPath="\Events\Default Work Unit\card_reject" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="3.781996" DurationMax="3.781996">
+				<Event Id="118243955" Name="card_reject" ObjectPath="\Events\Default Work Unit\SFX\card_reject" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="3.781996" DurationMax="3.781996">
 					<IncludedMemoryFiles>
 						<File Id="207088586" Language="SFX">
 							<ShortName>SFX_card-reject.wav</ShortName>
@@ -77,7 +42,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="128625444" Name="door_close" ObjectPath="\Events\Default Work Unit\door_close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="2.693968" DurationMax="2.693968">
+				<Event Id="128625444" Name="door_close" ObjectPath="\Events\Default Work Unit\SFX\door_close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="3.193968" DurationMax="3.193968">
 					<IncludedMemoryFiles>
 						<File Id="375134056" Language="SFX">
 							<ShortName>SFX_door-close.wav</ShortName>
@@ -85,7 +50,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4090069850" Name="door_handle" ObjectPath="\Events\Default Work Unit\door_handle" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="2.303220" DurationMax="2.303220">
+				<Event Id="4090069850" Name="door_handle" ObjectPath="\Events\Default Work Unit\SFX\door_handle" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="2.303220" DurationMax="2.303220">
 					<IncludedMemoryFiles>
 						<File Id="311573354" Language="SFX">
 							<ShortName>SFX_door_handle.wav</ShortName>
@@ -93,7 +58,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="535830432" Name="door_open" ObjectPath="\Events\Default Work Unit\door_open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="2.198231" DurationMax="2.198231">
+				<Event Id="535830432" Name="door_open" ObjectPath="\Events\Default Work Unit\SFX\door_open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="2.198231" DurationMax="2.198231">
 					<IncludedMemoryFiles>
 						<File Id="645325197" Language="SFX">
 							<ShortName>SFX_door_open.wav</ShortName>
@@ -101,60 +66,512 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1086717530" Name="fear_female" ObjectPath="\Events\Default Work Unit\Voice\fear_female" MaxAttenuation="10.000000" DurationType="Infinite">
+				<Event Id="1866025847" Name="footstep" ObjectPath="\Events\Default Work Unit\SFX\footstep" DurationType="OneShot" DurationMin="0.769252" DurationMax="1.485420"/>
+				<Event Id="2690609018" Name="VCE_andrew_loud" ObjectPath="\Events\Default Work Unit\Voice\VCE_andrew_loud" MaxAttenuation="7.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="66252184" Language="SFX">
-							<ShortName>VCE_fear3reaper.wav</ShortName>
-							<Path>SFX\VCE_fear3reaper_D79FB2B7.wem</Path>
+						<File Id="77339932" Language="SFX">
+							<ShortName>01-VCE-andrew-007.wav</ShortName>
+							<Path>SFX\01-VCE-andrew-007_10C4C929.wem</Path>
+						</File>
+						<File Id="232863171" Language="SFX">
+							<ShortName>01-VCE-andrew-011.wav</ShortName>
+							<Path>SFX\01-VCE-andrew-011_10C4C929.wem</Path>
+						</File>
+						<File Id="235798746" Language="SFX">
+							<ShortName>01-VCE-andrew-008.wav</ShortName>
+							<Path>SFX\01-VCE-andrew-008_10C4C929.wem</Path>
+						</File>
+						<File Id="644424118" Language="SFX">
+							<ShortName>01-VCE-andrew-010.wav</ShortName>
+							<Path>SFX\01-VCE-andrew-010_10C4C929.wem</Path>
+						</File>
+						<File Id="655384607" Language="SFX">
+							<ShortName>01-VCE-andrew-012.wav</ShortName>
+							<Path>SFX\01-VCE-andrew-012_10C4C929.wem</Path>
+						</File>
+						<File Id="815302368" Language="SFX">
+							<ShortName>01-VCE-andrew-009.wav</ShortName>
+							<Path>SFX\01-VCE-andrew-009_10C4C929.wem</Path>
+						</File>
+						<File Id="840729074" Language="SFX">
+							<ShortName>01-VCE-andrew-013.wav</ShortName>
+							<Path>SFX\01-VCE-andrew-013_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="393728557" Name="fear_male" ObjectPath="\Events\Default Work Unit\Voice\fear_male" MaxAttenuation="10.000000" DurationType="Infinite">
+				<Event Id="1615484651" Name="VCE_andrew_medium" ObjectPath="\Events\Default Work Unit\Voice\VCE_andrew_medium" MaxAttenuation="7.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="758218597" Language="SFX">
-							<ShortName>VCE_fear2reaper.wav</ShortName>
-							<Path>SFX\VCE_fear2reaper_D79FB2B7.wem</Path>
+						<File Id="139772807" Language="SFX">
+							<ShortName>01-VCE-andrew-006.wav</ShortName>
+							<Path>SFX\01-VCE-andrew-006_10C4C929.wem</Path>
+						</File>
+						<File Id="154705710" Language="SFX">
+							<ShortName>02-VCE-andrew2-011.wav</ShortName>
+							<Path>SFX\02-VCE-andrew2-011_10C4C929.wem</Path>
+						</File>
+						<File Id="676074741" Language="SFX">
+							<ShortName>01-VCE-andrew-005.wav</ShortName>
+							<Path>SFX\01-VCE-andrew-005_10C4C929.wem</Path>
+						</File>
+						<File Id="741843556" Language="SFX">
+							<ShortName>02-VCE-andrew2-013.wav</ShortName>
+							<Path>SFX\02-VCE-andrew2-013_10C4C929.wem</Path>
+						</File>
+						<File Id="822932314" Language="SFX">
+							<ShortName>01-VCE-andrew-004.wav</ShortName>
+							<Path>SFX\01-VCE-andrew-004_10C4C929.wem</Path>
+						</File>
+						<File Id="856935496" Language="SFX">
+							<ShortName>01-VCE-andrew-002.wav</ShortName>
+							<Path>SFX\01-VCE-andrew-002_10C4C929.wem</Path>
+						</File>
+						<File Id="982862148" Language="SFX">
+							<ShortName>02-VCE-andrew2-012.wav</ShortName>
+							<Path>SFX\02-VCE-andrew2-012_10C4C929.wem</Path>
+						</File>
+						<File Id="986127875" Language="SFX">
+							<ShortName>01-VCE-andrew-003.wav</ShortName>
+							<Path>SFX\01-VCE-andrew-003_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1866025847" Name="footstep" ObjectPath="\Events\Default Work Unit\footstep" DurationType="OneShot" DurationMin="0.769252" DurationMax="1.485420"/>
+				<Event Id="3312710034" Name="VCE_andrew_soft" ObjectPath="\Events\Default Work Unit\Voice\VCE_andrew_soft" MaxAttenuation="7.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="24626835" Language="SFX">
+							<ShortName>02-VCE-andrew2-010.wav</ShortName>
+							<Path>SFX\02-VCE-andrew2-010_10C4C929.wem</Path>
+						</File>
+						<File Id="96483055" Language="SFX">
+							<ShortName>02-VCE-andrew2-009.wav</ShortName>
+							<Path>SFX\02-VCE-andrew2-009_10C4C929.wem</Path>
+						</File>
+						<File Id="107425708" Language="SFX">
+							<ShortName>01-VCE-andrew-001.wav</ShortName>
+							<Path>SFX\01-VCE-andrew-001_10C4C929.wem</Path>
+						</File>
+						<File Id="134747153" Language="SFX">
+							<ShortName>02-VCE-andrew2-005.wav</ShortName>
+							<Path>SFX\02-VCE-andrew2-005_10C4C929.wem</Path>
+						</File>
+						<File Id="231379648" Language="SFX">
+							<ShortName>02-VCE-andrew2-001.wav</ShortName>
+							<Path>SFX\02-VCE-andrew2-001_10C4C929.wem</Path>
+						</File>
+						<File Id="457254032" Language="SFX">
+							<ShortName>02-VCE-andrew2-007.wav</ShortName>
+							<Path>SFX\02-VCE-andrew2-007_10C4C929.wem</Path>
+						</File>
+						<File Id="563264003" Language="SFX">
+							<ShortName>02-VCE-andrew2-008.wav</ShortName>
+							<Path>SFX\02-VCE-andrew2-008_10C4C929.wem</Path>
+						</File>
+						<File Id="660539125" Language="SFX">
+							<ShortName>02-VCE-andrew2-004.wav</ShortName>
+							<Path>SFX\02-VCE-andrew2-004_10C4C929.wem</Path>
+						</File>
+						<File Id="680367883" Language="SFX">
+							<ShortName>02-VCE-andrew2-002.wav</ShortName>
+							<Path>SFX\02-VCE-andrew2-002_10C4C929.wem</Path>
+						</File>
+						<File Id="706815037" Language="SFX">
+							<ShortName>02-VCE-andrew2-006.wav</ShortName>
+							<Path>SFX\02-VCE-andrew2-006_10C4C929.wem</Path>
+						</File>
+						<File Id="1066935224" Language="SFX">
+							<ShortName>02-VCE-andrew2-003.wav</ShortName>
+							<Path>SFX\02-VCE-andrew2-003_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4173527747" Name="VCE_scream" ObjectPath="\Events\Default Work Unit\Voice\VCE_scream" DurationType="OneShot" DurationMin="4.187596" DurationMax="4.187596">
+					<IncludedMemoryFiles>
+						<File Id="871711540" Language="SFX">
+							<ShortName>05-VCE_scream.wav</ShortName>
+							<Path>SFX\05-VCE_scream_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="584853266" Name="VCE_wendy_loud" ObjectPath="\Events\Default Work Unit\Voice\VCE_wendy_loud" MaxAttenuation="7.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="167012258" Language="SFX">
+							<ShortName>03-VCE-wendy-011.wav</ShortName>
+							<Path>SFX\03-VCE-wendy-011_10C4C929.wem</Path>
+						</File>
+						<File Id="380395122" Language="SFX">
+							<ShortName>04-VCE-wendy2-011.wav</ShortName>
+							<Path>SFX\04-VCE-wendy2-011_10C4C929.wem</Path>
+						</File>
+						<File Id="659945467" Language="SFX">
+							<ShortName>04-VCE-wendy2-010.wav</ShortName>
+							<Path>SFX\04-VCE-wendy2-010_10C4C929.wem</Path>
+						</File>
+						<File Id="711302397" Language="SFX">
+							<ShortName>03-VCE-wendy-010.wav</ShortName>
+							<Path>SFX\03-VCE-wendy-010_10C4C929.wem</Path>
+						</File>
+						<File Id="816804458" Language="SFX">
+							<ShortName>03-VCE-wendy-009.wav</ShortName>
+							<Path>SFX\03-VCE-wendy-009_10C4C929.wem</Path>
+						</File>
+						<File Id="862097904" Language="SFX">
+							<ShortName>03-VCE-wendy-012.wav</ShortName>
+							<Path>SFX\03-VCE-wendy-012_10C4C929.wem</Path>
+						</File>
+						<File Id="880792263" Language="SFX">
+							<ShortName>04-VCE-wendy2-014.wav</ShortName>
+							<Path>SFX\04-VCE-wendy2-014_10C4C929.wem</Path>
+						</File>
+						<File Id="916356619" Language="SFX">
+							<ShortName>04-VCE-wendy2-012.wav</ShortName>
+							<Path>SFX\04-VCE-wendy2-012_10C4C929.wem</Path>
+						</File>
+						<File Id="925968249" Language="SFX">
+							<ShortName>04-VCE-wendy2-013.wav</ShortName>
+							<Path>SFX\04-VCE-wendy2-013_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="176915315" Name="VCE_wendy_medium" ObjectPath="\Events\Default Work Unit\Voice\VCE_wendy_medium" MaxAttenuation="7.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="28958362" Language="SFX">
+							<ShortName>03-VCE-wendy-005.wav</ShortName>
+							<Path>SFX\03-VCE-wendy-005_10C4C929.wem</Path>
+						</File>
+						<File Id="185904914" Language="SFX">
+							<ShortName>04-VCE-wendy2-007.wav</ShortName>
+							<Path>SFX\04-VCE-wendy2-007_10C4C929.wem</Path>
+						</File>
+						<File Id="607639837" Language="SFX">
+							<ShortName>03-VCE-wendy-008.wav</ShortName>
+							<Path>SFX\03-VCE-wendy-008_10C4C929.wem</Path>
+						</File>
+						<File Id="730418419" Language="SFX">
+							<ShortName>03-VCE-wendy-007.wav</ShortName>
+							<Path>SFX\03-VCE-wendy-007_10C4C929.wem</Path>
+						</File>
+						<File Id="739461253" Language="SFX">
+							<ShortName>04-VCE-wendy2-008.wav</ShortName>
+							<Path>SFX\04-VCE-wendy2-008_10C4C929.wem</Path>
+						</File>
+						<File Id="845315985" Language="SFX">
+							<ShortName>04-VCE-wendy2-009.wav</ShortName>
+							<Path>SFX\04-VCE-wendy2-009_10C4C929.wem</Path>
+						</File>
+						<File Id="852191871" Language="SFX">
+							<ShortName>03-VCE-wendy-006.wav</ShortName>
+							<Path>SFX\03-VCE-wendy-006_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1433205722" Name="VCE_wendy_soft" ObjectPath="\Events\Default Work Unit\Voice\VCE_wendy_soft" MaxAttenuation="7.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="200045509" Language="SFX">
+							<ShortName>04-VCE-wendy2-006.wav</ShortName>
+							<Path>SFX\04-VCE-wendy2-006_10C4C929.wem</Path>
+						</File>
+						<File Id="387424845" Language="SFX">
+							<ShortName>03-VCE-wendy-004.wav</ShortName>
+							<Path>SFX\03-VCE-wendy-004_10C4C929.wem</Path>
+						</File>
+						<File Id="419709444" Language="SFX">
+							<ShortName>04-VCE-wendy2-001.wav</ShortName>
+							<Path>SFX\04-VCE-wendy2-001_10C4C929.wem</Path>
+						</File>
+						<File Id="536971781" Language="SFX">
+							<ShortName>04-VCE-wendy2-003.wav</ShortName>
+							<Path>SFX\04-VCE-wendy2-003_10C4C929.wem</Path>
+						</File>
+						<File Id="544331867" Language="SFX">
+							<ShortName>03-VCE-wendy-003.wav</ShortName>
+							<Path>SFX\03-VCE-wendy-003_10C4C929.wem</Path>
+						</File>
+						<File Id="703035657" Language="SFX">
+							<ShortName>04-VCE-wendy2-004.wav</ShortName>
+							<Path>SFX\04-VCE-wendy2-004_10C4C929.wem</Path>
+						</File>
+						<File Id="764093283" Language="SFX">
+							<ShortName>03-VCE-wendy-001.wav</ShortName>
+							<Path>SFX\03-VCE-wendy-001_10C4C929.wem</Path>
+						</File>
+						<File Id="849798511" Language="SFX">
+							<ShortName>03-VCE-wendy-002.wav</ShortName>
+							<Path>SFX\03-VCE-wendy-002_10C4C929.wem</Path>
+						</File>
+						<File Id="857116671" Language="SFX">
+							<ShortName>04-VCE-wendy2-002.wav</ShortName>
+							<Path>SFX\04-VCE-wendy2-002_10C4C929.wem</Path>
+						</File>
+						<File Id="1003255258" Language="SFX">
+							<ShortName>04-VCE-wendy2-005.wav</ShortName>
+							<Path>SFX\04-VCE-wendy2-005_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="24626835" Language="SFX">
+					<ShortName>02-VCE-andrew2-010.wav</ShortName>
+					<Path>SFX\02-VCE-andrew2-010_10C4C929.wem</Path>
+				</File>
+				<File Id="28958362" Language="SFX">
+					<ShortName>03-VCE-wendy-005.wav</ShortName>
+					<Path>SFX\03-VCE-wendy-005_10C4C929.wem</Path>
+				</File>
+				<File Id="57268841" Language="SFX">
+					<ShortName>AMB-traffic.wav</ShortName>
+					<Path>SFX\AMB-traffic_D79FB2B7.wem</Path>
+				</File>
+				<File Id="77339932" Language="SFX">
+					<ShortName>01-VCE-andrew-007.wav</ShortName>
+					<Path>SFX\01-VCE-andrew-007_10C4C929.wem</Path>
+				</File>
+				<File Id="96483055" Language="SFX">
+					<ShortName>02-VCE-andrew2-009.wav</ShortName>
+					<Path>SFX\02-VCE-andrew2-009_10C4C929.wem</Path>
+				</File>
+				<File Id="107425708" Language="SFX">
+					<ShortName>01-VCE-andrew-001.wav</ShortName>
+					<Path>SFX\01-VCE-andrew-001_10C4C929.wem</Path>
+				</File>
+				<File Id="134747153" Language="SFX">
+					<ShortName>02-VCE-andrew2-005.wav</ShortName>
+					<Path>SFX\02-VCE-andrew2-005_10C4C929.wem</Path>
+				</File>
+				<File Id="139772807" Language="SFX">
+					<ShortName>01-VCE-andrew-006.wav</ShortName>
+					<Path>SFX\01-VCE-andrew-006_10C4C929.wem</Path>
+				</File>
+				<File Id="154705710" Language="SFX">
+					<ShortName>02-VCE-andrew2-011.wav</ShortName>
+					<Path>SFX\02-VCE-andrew2-011_10C4C929.wem</Path>
+				</File>
+				<File Id="167012258" Language="SFX">
+					<ShortName>03-VCE-wendy-011.wav</ShortName>
+					<Path>SFX\03-VCE-wendy-011_10C4C929.wem</Path>
+				</File>
+				<File Id="185904914" Language="SFX">
+					<ShortName>04-VCE-wendy2-007.wav</ShortName>
+					<Path>SFX\04-VCE-wendy2-007_10C4C929.wem</Path>
+				</File>
+				<File Id="200045509" Language="SFX">
+					<ShortName>04-VCE-wendy2-006.wav</ShortName>
+					<Path>SFX\04-VCE-wendy2-006_10C4C929.wem</Path>
+				</File>
 				<File Id="227142155" Language="SFX">
 					<ShortName>SFX_footsteps-2.wav</ShortName>
 					<Path>SFX\SFX_footsteps-2_10C4C929.wem</Path>
+				</File>
+				<File Id="231379648" Language="SFX">
+					<ShortName>02-VCE-andrew2-001.wav</ShortName>
+					<Path>SFX\02-VCE-andrew2-001_10C4C929.wem</Path>
+				</File>
+				<File Id="232863171" Language="SFX">
+					<ShortName>01-VCE-andrew-011.wav</ShortName>
+					<Path>SFX\01-VCE-andrew-011_10C4C929.wem</Path>
+				</File>
+				<File Id="235798746" Language="SFX">
+					<ShortName>01-VCE-andrew-008.wav</ShortName>
+					<Path>SFX\01-VCE-andrew-008_10C4C929.wem</Path>
+				</File>
+				<File Id="298359704" Language="SFX">
+					<ShortName>AMB-beep.wav</ShortName>
+					<Path>SFX\AMB-beep_D79FB2B7.wem</Path>
 				</File>
 				<File Id="325492471" Language="SFX">
 					<ShortName>SFX_footsteps-3.wav</ShortName>
 					<Path>SFX\SFX_footsteps-3_10C4C929.wem</Path>
 				</File>
+				<File Id="331335489" Language="SFX">
+					<ShortName>AMB-darkwind-consolidated.wav</ShortName>
+					<Path>SFX\AMB-darkwind-consolidated_D79FB2B7.wem</Path>
+				</File>
+				<File Id="380395122" Language="SFX">
+					<ShortName>04-VCE-wendy2-011.wav</ShortName>
+					<Path>SFX\04-VCE-wendy2-011_10C4C929.wem</Path>
+				</File>
 				<File Id="380948175" Language="SFX">
 					<ShortName>SFX_footsteps-6.wav</ShortName>
 					<Path>SFX\SFX_footsteps-6_10C4C929.wem</Path>
+				</File>
+				<File Id="387424845" Language="SFX">
+					<ShortName>03-VCE-wendy-004.wav</ShortName>
+					<Path>SFX\03-VCE-wendy-004_10C4C929.wem</Path>
+				</File>
+				<File Id="419709444" Language="SFX">
+					<ShortName>04-VCE-wendy2-001.wav</ShortName>
+					<Path>SFX\04-VCE-wendy2-001_10C4C929.wem</Path>
+				</File>
+				<File Id="457254032" Language="SFX">
+					<ShortName>02-VCE-andrew2-007.wav</ShortName>
+					<Path>SFX\02-VCE-andrew2-007_10C4C929.wem</Path>
 				</File>
 				<File Id="527199035" Language="SFX">
 					<ShortName>SFX_footsteps-5.wav</ShortName>
 					<Path>SFX\SFX_footsteps-5_10C4C929.wem</Path>
 				</File>
+				<File Id="536971781" Language="SFX">
+					<ShortName>04-VCE-wendy2-003.wav</ShortName>
+					<Path>SFX\04-VCE-wendy2-003_10C4C929.wem</Path>
+				</File>
+				<File Id="544331867" Language="SFX">
+					<ShortName>03-VCE-wendy-003.wav</ShortName>
+					<Path>SFX\03-VCE-wendy-003_10C4C929.wem</Path>
+				</File>
+				<File Id="563264003" Language="SFX">
+					<ShortName>02-VCE-andrew2-008.wav</ShortName>
+					<Path>SFX\02-VCE-andrew2-008_10C4C929.wem</Path>
+				</File>
+				<File Id="607639837" Language="SFX">
+					<ShortName>03-VCE-wendy-008.wav</ShortName>
+					<Path>SFX\03-VCE-wendy-008_10C4C929.wem</Path>
+				</File>
 				<File Id="637399422" Language="SFX">
 					<ShortName>SFX_footsteps-8.wav</ShortName>
 					<Path>SFX\SFX_footsteps-8_10C4C929.wem</Path>
+				</File>
+				<File Id="644424118" Language="SFX">
+					<ShortName>01-VCE-andrew-010.wav</ShortName>
+					<Path>SFX\01-VCE-andrew-010_10C4C929.wem</Path>
+				</File>
+				<File Id="654012214" Language="SFX">
+					<ShortName>AMB-aircon.wav</ShortName>
+					<Path>SFX\AMB-aircon_D79FB2B7.wem</Path>
+				</File>
+				<File Id="655384607" Language="SFX">
+					<ShortName>01-VCE-andrew-012.wav</ShortName>
+					<Path>SFX\01-VCE-andrew-012_10C4C929.wem</Path>
+				</File>
+				<File Id="659945467" Language="SFX">
+					<ShortName>04-VCE-wendy2-010.wav</ShortName>
+					<Path>SFX\04-VCE-wendy2-010_10C4C929.wem</Path>
+				</File>
+				<File Id="660539125" Language="SFX">
+					<ShortName>02-VCE-andrew2-004.wav</ShortName>
+					<Path>SFX\02-VCE-andrew2-004_10C4C929.wem</Path>
+				</File>
+				<File Id="676074741" Language="SFX">
+					<ShortName>01-VCE-andrew-005.wav</ShortName>
+					<Path>SFX\01-VCE-andrew-005_10C4C929.wem</Path>
+				</File>
+				<File Id="680367883" Language="SFX">
+					<ShortName>02-VCE-andrew2-002.wav</ShortName>
+					<Path>SFX\02-VCE-andrew2-002_10C4C929.wem</Path>
 				</File>
 				<File Id="684162146" Language="SFX">
 					<ShortName>SFX_footsteps-10.wav</ShortName>
 					<Path>SFX\SFX_footsteps-10_10C4C929.wem</Path>
 				</File>
+				<File Id="703035657" Language="SFX">
+					<ShortName>04-VCE-wendy2-004.wav</ShortName>
+					<Path>SFX\04-VCE-wendy2-004_10C4C929.wem</Path>
+				</File>
+				<File Id="706815037" Language="SFX">
+					<ShortName>02-VCE-andrew2-006.wav</ShortName>
+					<Path>SFX\02-VCE-andrew2-006_10C4C929.wem</Path>
+				</File>
+				<File Id="711302397" Language="SFX">
+					<ShortName>03-VCE-wendy-010.wav</ShortName>
+					<Path>SFX\03-VCE-wendy-010_10C4C929.wem</Path>
+				</File>
+				<File Id="730418419" Language="SFX">
+					<ShortName>03-VCE-wendy-007.wav</ShortName>
+					<Path>SFX\03-VCE-wendy-007_10C4C929.wem</Path>
+				</File>
+				<File Id="739461253" Language="SFX">
+					<ShortName>04-VCE-wendy2-008.wav</ShortName>
+					<Path>SFX\04-VCE-wendy2-008_10C4C929.wem</Path>
+				</File>
+				<File Id="741843556" Language="SFX">
+					<ShortName>02-VCE-andrew2-013.wav</ShortName>
+					<Path>SFX\02-VCE-andrew2-013_10C4C929.wem</Path>
+				</File>
+				<File Id="764093283" Language="SFX">
+					<ShortName>03-VCE-wendy-001.wav</ShortName>
+					<Path>SFX\03-VCE-wendy-001_10C4C929.wem</Path>
+				</File>
+				<File Id="815302368" Language="SFX">
+					<ShortName>01-VCE-andrew-009.wav</ShortName>
+					<Path>SFX\01-VCE-andrew-009_10C4C929.wem</Path>
+				</File>
+				<File Id="816804458" Language="SFX">
+					<ShortName>03-VCE-wendy-009.wav</ShortName>
+					<Path>SFX\03-VCE-wendy-009_10C4C929.wem</Path>
+				</File>
+				<File Id="822932314" Language="SFX">
+					<ShortName>01-VCE-andrew-004.wav</ShortName>
+					<Path>SFX\01-VCE-andrew-004_10C4C929.wem</Path>
+				</File>
+				<File Id="840729074" Language="SFX">
+					<ShortName>01-VCE-andrew-013.wav</ShortName>
+					<Path>SFX\01-VCE-andrew-013_10C4C929.wem</Path>
+				</File>
+				<File Id="845315985" Language="SFX">
+					<ShortName>04-VCE-wendy2-009.wav</ShortName>
+					<Path>SFX\04-VCE-wendy2-009_10C4C929.wem</Path>
+				</File>
+				<File Id="849798511" Language="SFX">
+					<ShortName>03-VCE-wendy-002.wav</ShortName>
+					<Path>SFX\03-VCE-wendy-002_10C4C929.wem</Path>
+				</File>
+				<File Id="852191871" Language="SFX">
+					<ShortName>03-VCE-wendy-006.wav</ShortName>
+					<Path>SFX\03-VCE-wendy-006_10C4C929.wem</Path>
+				</File>
+				<File Id="856935496" Language="SFX">
+					<ShortName>01-VCE-andrew-002.wav</ShortName>
+					<Path>SFX\01-VCE-andrew-002_10C4C929.wem</Path>
+				</File>
+				<File Id="857116671" Language="SFX">
+					<ShortName>04-VCE-wendy2-002.wav</ShortName>
+					<Path>SFX\04-VCE-wendy2-002_10C4C929.wem</Path>
+				</File>
 				<File Id="858127442" Language="SFX">
 					<ShortName>SFX_footsteps-7.wav</ShortName>
 					<Path>SFX\SFX_footsteps-7_10C4C929.wem</Path>
+				</File>
+				<File Id="862097904" Language="SFX">
+					<ShortName>03-VCE-wendy-012.wav</ShortName>
+					<Path>SFX\03-VCE-wendy-012_10C4C929.wem</Path>
+				</File>
+				<File Id="880792263" Language="SFX">
+					<ShortName>04-VCE-wendy2-014.wav</ShortName>
+					<Path>SFX\04-VCE-wendy2-014_10C4C929.wem</Path>
 				</File>
 				<File Id="887690033" Language="SFX">
 					<ShortName>SFX_footsteps-4.wav</ShortName>
 					<Path>SFX\SFX_footsteps-4_10C4C929.wem</Path>
 				</File>
+				<File Id="916356619" Language="SFX">
+					<ShortName>04-VCE-wendy2-012.wav</ShortName>
+					<Path>SFX\04-VCE-wendy2-012_10C4C929.wem</Path>
+				</File>
+				<File Id="925968249" Language="SFX">
+					<ShortName>04-VCE-wendy2-013.wav</ShortName>
+					<Path>SFX\04-VCE-wendy2-013_10C4C929.wem</Path>
+				</File>
 				<File Id="927632515" Language="SFX">
 					<ShortName>SFX_footsteps-9.wav</ShortName>
 					<Path>SFX\SFX_footsteps-9_10C4C929.wem</Path>
+				</File>
+				<File Id="982862148" Language="SFX">
+					<ShortName>02-VCE-andrew2-012.wav</ShortName>
+					<Path>SFX\02-VCE-andrew2-012_10C4C929.wem</Path>
+				</File>
+				<File Id="986127875" Language="SFX">
+					<ShortName>01-VCE-andrew-003.wav</ShortName>
+					<Path>SFX\01-VCE-andrew-003_10C4C929.wem</Path>
+				</File>
+				<File Id="1003255258" Language="SFX">
+					<ShortName>04-VCE-wendy2-005.wav</ShortName>
+					<Path>SFX\04-VCE-wendy2-005_10C4C929.wem</Path>
+				</File>
+				<File Id="1063516820" Language="SFX">
+					<ShortName>AMB-machine.wav</ShortName>
+					<Path>SFX\AMB-machine_D79FB2B7.wem</Path>
+				</File>
+				<File Id="1066935224" Language="SFX">
+					<ShortName>02-VCE-andrew2-003.wav</ShortName>
+					<Path>SFX\02-VCE-andrew2-003_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

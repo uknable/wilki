@@ -100,7 +100,7 @@
 					<ChildrenList>
 						<Effect Name="Light_Expander" ID="{C7E71A3B-745F-47B0-8F31-276DD413F83C}" PluginName="Wwise Expander" CompanyID="0" PluginID="109" PluginType="3">
 							<PropertyList>
-								<Property Name="Ratio" Type="Real32" Value="1.5"/>
+								<Property Name="Ratio" Type="Real32" Value="1.3"/>
 								<Property Name="Threshold" Type="Real32" Value="0"/>
 							</PropertyList>
 						</Effect>
@@ -132,7 +132,7 @@
 							<PropertyList>
 								<Property Name="DelayTime" Type="Real32" Value="0.09"/>
 								<Property Name="Feedback" Type="Real32" Value="6"/>
-								<Property Name="WetDryMix" Type="Real32" Value="34"/>
+								<Property Name="WetDryMix" Type="Real32" Value="20"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="One_Tap_Half_Second" ID="{B8FE0D3B-7AAB-4344-89FE-177602B7BF19}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3"/>
@@ -736,10 +736,12 @@
 						</Effect>
 						<Effect Name="Small_Tiled_Room1" ID="{41EEE722-3009-4B3F-8820-F414623783E3}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
 							<PropertyList>
-								<Property Name="HFRatio" Type="Real32" Value="8"/>
+								<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
+								<Property Name="HFRatio" Type="Real32" Value="6.7"/>
 								<Property Name="NumberOfDelays" Type="int32" Value="12"/>
-								<Property Name="ReverbTime" Type="Real32" Value="1.5"/>
-								<Property Name="WetLevel" Type="Real32" Value="-25"/>
+								<Property Name="ProcessLFE" Type="bool" Value="False"/>
+								<Property Name="ReverbTime" Type="Real32" Value="2.3"/>
+								<Property Name="WetLevel" Type="Real32" Value="-17"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Small_Wooden_Room1" ID="{F7CBE859-36A8-4174-B553-AE32A7FE95FA}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">

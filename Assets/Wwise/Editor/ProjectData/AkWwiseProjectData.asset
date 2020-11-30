@@ -49,7 +49,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 8b08c57925dff749b49d35f2f90e820e
     GuidInternal: 
-    m_lastTime: -8585960140070942236
+    m_lastTime: -8585949589899049943
     List:
     - name: soundbank
       guid: eec94f08c351ed4db7a22ee3cb14f059
@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: fcbe60f4f32cfe4fa224e16e114642fc
     GuidInternal: 
-    m_lastTime: -8585960140293055745
+    m_lastTime: -8585949253625776224
     List:
     - name: AMB_aircon
       guid: 6ec64cd17e38b3459c9031953289e013
@@ -126,6 +126,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: AMB_machine
+      guid: f51be6556fc5db47975b0114967bab1b
+      id: 4110157181
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambient
+        ObjectType: 4
+      - ElementName: AMB_machine
+        ObjectType: 3
+      Path: Default Work Unit\Ambient\AMB_machine
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: AMB_rain
       guid: a1b1266afdadb340b223137cc27bcd64
       id: 3302041772
@@ -137,6 +151,20 @@ MonoBehaviour:
       - ElementName: AMB_rain
         ObjectType: 3
       Path: Default Work Unit\Ambient\AMB_rain
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: AMB_traffic
+      guid: 6ac5aaaac8edee48a9c77942544ee02f
+      id: 1442362601
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambient
+        ObjectType: 4
+      - ElementName: AMB_traffic
+        ObjectType: 3
+      Path: Default Work Unit\Ambient\AMB_traffic
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -158,9 +186,11 @@ MonoBehaviour:
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
       - ElementName: card_accept
         ObjectType: 3
-      Path: Default Work Unit\card_accept
+      Path: Default Work Unit\SFX\card_accept
       maxAttenuation: 0
       maxDuration: 1.692902
       minDuration: 1.692902
@@ -170,9 +200,11 @@ MonoBehaviour:
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
       - ElementName: card_reject
         ObjectType: 3
-      Path: Default Work Unit\card_reject
+      Path: Default Work Unit\SFX\card_reject
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -182,9 +214,11 @@ MonoBehaviour:
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
       - ElementName: door_close
         ObjectType: 3
-      Path: Default Work Unit\door_close
+      Path: Default Work Unit\SFX\door_close
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -194,9 +228,11 @@ MonoBehaviour:
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
       - ElementName: door_handle
         ObjectType: 3
-      Path: Default Work Unit\door_handle
+      Path: Default Work Unit\SFX\door_handle
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -206,37 +242,11 @@ MonoBehaviour:
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
       - ElementName: door_open
         ObjectType: 3
-      Path: Default Work Unit\door_open
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: fear_female
-      guid: 9abebd3ff2c62641b177c23375f7ed59
-      id: 1086717530
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Voice
-        ObjectType: 4
-      - ElementName: fear_female
-        ObjectType: 3
-      Path: Default Work Unit\Voice\fear_female
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: fear_male
-      guid: d11b3759a232394c8175d574fa933cba
-      id: 393728557
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Voice
-        ObjectType: 4
-      - ElementName: fear_male
-        ObjectType: 3
-      Path: Default Work Unit\Voice\fear_male
+      Path: Default Work Unit\SFX\door_open
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -246,9 +256,121 @@ MonoBehaviour:
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
       - ElementName: footstep
         ObjectType: 3
-      Path: Default Work Unit\footstep
+      Path: Default Work Unit\SFX\footstep
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX
+      guid: 3aca4b16dbbdb245a0e6098ca376f0d5
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      Path: Default Work Unit\SFX
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VCE_andrew_loud
+      guid: 97196d26d63a7c46b98068c853fa062a
+      id: 2690609018
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voice
+        ObjectType: 4
+      - ElementName: VCE_andrew_loud
+        ObjectType: 3
+      Path: Default Work Unit\Voice\VCE_andrew_loud
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VCE_andrew_medium
+      guid: f423b509f2bbac48823ba1bb82cf0f83
+      id: 1615484651
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voice
+        ObjectType: 4
+      - ElementName: VCE_andrew_medium
+        ObjectType: 3
+      Path: Default Work Unit\Voice\VCE_andrew_medium
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VCE_andrew_soft
+      guid: 5b9de0e6ed699647a5126d36e67404e4
+      id: 3312710034
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voice
+        ObjectType: 4
+      - ElementName: VCE_andrew_soft
+        ObjectType: 3
+      Path: Default Work Unit\Voice\VCE_andrew_soft
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VCE_scream
+      guid: f9f7f6c47d03ae4b850762c390cc4793
+      id: 4173527747
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voice
+        ObjectType: 4
+      - ElementName: VCE_scream
+        ObjectType: 3
+      Path: Default Work Unit\Voice\VCE_scream
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VCE_wendy_loud
+      guid: 3c2950f3d37cda459e53f84cd947c4f9
+      id: 584853266
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voice
+        ObjectType: 4
+      - ElementName: VCE_wendy_loud
+        ObjectType: 3
+      Path: Default Work Unit\Voice\VCE_wendy_loud
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VCE_wendy_medium
+      guid: 11fc727a1e557f4d9bbfe48ff5ceec4b
+      id: 176915315
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voice
+        ObjectType: 4
+      - ElementName: VCE_wendy_medium
+        ObjectType: 3
+      Path: Default Work Unit\Voice\VCE_wendy_medium
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VCE_wendy_soft
+      guid: 7e13ea39d6ad964e92eb38da628cd3a2
+      id: 1433205722
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voice
+        ObjectType: 4
+      - ElementName: VCE_wendy_soft
+        ObjectType: 3
+      Path: Default Work Unit\Voice\VCE_wendy_soft
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -306,13 +428,10 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /wilki_WwiseProject
-  - /wilki_WwiseProject/Auxiliary Busses
   - /wilki_WwiseProject/Events
   - /wilki_WwiseProject/Events/Default Work Unit
   - /wilki_WwiseProject/Events/Default Work Unit/Ambient
+  - /wilki_WwiseProject/Events/Default Work Unit/SFX
   - /wilki_WwiseProject/Events/Default Work Unit/Voice
-  - /wilki_WwiseProject/SoundBanks
-  - /wilki_WwiseProject/SoundBanks/Default Work Unit
-  - /wilki_WwiseProject/Virtual Acoustics
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

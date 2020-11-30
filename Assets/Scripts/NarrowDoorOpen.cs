@@ -23,6 +23,7 @@ public class NarrowDoorOpen : MonoBehaviour {
 		if (other.tag == "Player" && Input.GetMouseButtonDown(0) && gmScript.hasCard) {
 			isOpen = !isOpen;
 			animator.SetBool("NarrowDoorOpen", isOpen);
+			AkSoundEngine.PostEvent("door_handle", gameObject);
 		}
 	}
 }

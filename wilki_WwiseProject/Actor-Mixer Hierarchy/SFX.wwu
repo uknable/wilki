@@ -28,28 +28,6 @@
 						<ActiveSource Name="SFX_card-reject" ID="{470551E6-8B36-46C8-867F-2A4BF128FA2F}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="SFX_card-accept-2" ID="{35313C75-622A-41C3-9930-F4B480537C03}" ShortID="625437170">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="SFX_card-accept-2" ID="{D030E602-58D5-4DD9-B406-CB0D2F326D14}">
-							<Language>SFX</Language>
-							<AudioFile>SFX_card-accept-2.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="647619751"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="SFX_card-accept-2" ID="{D030E602-58D5-4DD9-B406-CB0D2F326D14}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="SFX_card-accept" ID="{EB2E9384-D595-4C85-885D-203F57403D0B}" ShortID="178112121">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
@@ -81,31 +59,14 @@
 						<ActiveSource Name="SFX_card-accept" ID="{531A2D8C-E4B0-45F3-B558-21DA666FA487}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="SFX_card-reject-2" ID="{56341A29-9A4A-4A30-8F3D-6F41922EC304}" ShortID="662977295">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="SFX_card-reject-2" ID="{A6B1FB62-F20F-41C2-A91C-6BB5483B7980}">
-							<Language>SFX</Language>
-							<AudioFile>SFX_card-reject-2.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="206424022"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="SFX_card-reject-2" ID="{A6B1FB62-F20F-41C2-A91C-6BB5483B7980}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="SFX_door-close" ID="{31E4D5D2-E834-4A66-B484-AEE39B180AA6}" ShortID="873243096">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="InitialDelay" Type="Real64">
+							<ValueList>
+								<Value>0.5</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -146,6 +107,9 @@
 						</Reference>
 						<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
 							<ObjectRef Name="Light_Expander" ID="{C7E71A3B-745F-47B0-8F31-276DD413F83C}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect1" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+							<ObjectRef Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
@@ -352,31 +316,14 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
-				<Sound Name="SFX_door_close" ID="{FF182918-CC9F-4091-BD59-5668919D63E4}" ShortID="270475775">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="SFX_door_close" ID="{DE072768-F8AE-4A09-951B-3600CEC546DF}">
-							<Language>SFX</Language>
-							<AudioFile>SFX_door_close.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="971388821"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="SFX_door_close" ID="{DE072768-F8AE-4A09-951B-3600CEC546DF}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="SFX_door_handle" ID="{03AFADE0-3430-4618-A026-812D16465F7E}" ShortID="727534351">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -384,6 +331,9 @@
 						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Expander" CompanyID="0" PluginID="109" PluginType="3">
+							<ObjectRef Name="Light_Expander" ID="{C7E71A3B-745F-47B0-8F31-276DD413F83C}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
@@ -405,6 +355,11 @@
 				<Sound Name="SFX_door_open" ID="{442B09CA-2279-4917-B24C-A0AEBE24848A}" ShortID="564297569">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -412,6 +367,9 @@
 						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4984237-E717-43E9-B350-929FCE2D1EB4}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Expander" CompanyID="0" PluginID="109" PluginType="3">
+							<ObjectRef Name="Light_Expander" ID="{C7E71A3B-745F-47B0-8F31-276DD413F83C}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EEFE60EF-1429-459A-B505-67C994F2A3BD}"/>
